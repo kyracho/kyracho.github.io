@@ -6,6 +6,20 @@
     <title>Numerical Analysis</title>
     <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          fetch('markdownexmple.md')
+              .then(response => response.text())
+              .then(markdown => {
+                  const html = marked(markdown);
+                  document.querySelector('main').innerHTML = html;
+                  document.querySelector('section').innerHTML = html;  // Insert HTML into the section element
+                  document.querySelector('article').innerHTML = html;
+                  document.body.innerHTML += html;  // Append the HTML content to the body
+              })
+              .catch(error => console.error('Error loading Markdown file:', error));
+      });
+    </script>
   </head>
     
   <body>
@@ -24,34 +38,9 @@
     
   
   
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        fetch('markdownexmple.md')
-            .then(response => response.text())
-            .then(markdown => {
-                const html = marked(markdown);
-                document.getElementById('markdown-content').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading Markdown file:', error));
-    });
-  </script>
-  
-  <div id="markdown-content"></div>
-
-    
-  <script>
-      // Fetch the Markdown file
-      fetch('markdownexmple.md')
-          .then(response => response.text())
-          .then(markdown => {
-              // Convert Markdown to HTML
-              const htmlContent = marked(markdown);
-              // Insert HTML into the page
-              document.getElementById('content').innerHTML = htmlContent;
-          })
-          .catch(error => console.error('Error fetching the Markdown file:', error));
-  </script>
-  
+  <main>Loading Markdown...</main>
+  <section>Loading Markdown...</section>
+  <article>Loading Markdown...</article>
   <div id="content">Loading Markdown...</div>
 
     
