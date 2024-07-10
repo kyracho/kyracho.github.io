@@ -1,0 +1,5 @@
+title: My GitHub Pages Site
+description: A simple site for showcasing my work.
+theme: jekyll-theme-slate
+exclude:
+  - README.md
