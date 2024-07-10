@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Analysis</title>
+    <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
+  </head>
+  
+<body>
+  
+  <h1>Welcome to My Numerical Analysis Page</h1>
+
+  
+  <nav>
+     <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="numerical.html">Numerical Analysis</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+
+  
+  
+  <footer>
+    <p>&copy; 2024 My GitHub Pages Site</p>
+  </footer>
+
+</body>
+</html>
