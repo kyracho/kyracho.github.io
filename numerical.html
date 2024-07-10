@@ -6,6 +6,8 @@
     <title>Numerical Analysis</title>
     <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+
   </head>
   
 <body>
@@ -23,6 +25,28 @@
 
     </ul>
   </nav>
+
+  <script>console.log('JavaScript is working!');</script>
+    
+  <div id="test-div">Hello, World!</div>
+<script>
+  document.getElementById('test-div').textContent = 'Test Passed!';
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  const markdownContent = '# Hello World\n\nThis is a test of Markdown rendering.\n\n- Item 1\n- Item 2\n- [Link](https://example.com)';
+  const htmlContent = marked(markdownContent);
+  document.body.innerHTML = htmlContent;
+</script>
+
+<script>
+  fetch('numerical_projects/final_project/final_project.md')
+    .then(response => response.text())
+    .then(text => console.log(text))
+    .catch(error => console.error('Fetch error:', error));
+</script>
+
 
   <div id="markdown-content"></div>
     <script>
