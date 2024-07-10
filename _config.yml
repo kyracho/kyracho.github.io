@@ -3,3 +3,5 @@ description: A simple site for showcasing my work.
 theme: jekyll-theme-slate
 exclude:
   - README.md
+
+markdown: kramdown
