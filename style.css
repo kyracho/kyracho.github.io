@@ -156,3 +156,10 @@ footer p {
 .visible {
   display: block;
 }
+
+#myIframe
+{
+    position: relative;
+    height: 100%;
+    width: 100%; 
+}
