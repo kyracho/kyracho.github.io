@@ -167,10 +167,3 @@ footer p {
 .visible {
   display: block;
 }
-
-iframe { 
-  height: 100vh;
-  width: 100vh;
-  display:block;
-       }
-
