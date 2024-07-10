@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numerical Analysis</title>
     <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
-    
+
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+      }
+    </script>
     
   <body>
     
@@ -23,7 +28,7 @@
     </nav>
     
   
-    <iframe src="numerical_projects/final_project/final_project.html" width= "100%" scrolling="yes">
+    <iframe src="numerical_projects/final_project/final_project.html" onload="resizeIframe(this)">
     
   <footer>
     <p>&copy; 2024 My GitHub Pages Site</p>
