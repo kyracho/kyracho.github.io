@@ -26,7 +26,7 @@
   <div id="markdown-content"></div>
     <script>
         // Fetch the Markdown file
-        fetch('numerical/final_project/final_project.md')
+        fetch('numerical_analysis_projects/final_project/final_project.md')
             .then(response => response.text())
             .then(markdown => {
                 // Convert Markdown to HTML
