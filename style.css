@@ -157,9 +157,8 @@ footer p {
   display: block;
 }
 
-#myIframe
-{
-    position: relative;
-    height: 100%;
-    width: 100%; 
-}
+iframe { 
+  height: 100vh;
+  width: 100vh;
+       }
+
