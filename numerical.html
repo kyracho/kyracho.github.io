@@ -6,62 +6,57 @@
     <title>Numerical Analysis</title>
     <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
   </head>
+    
+  <body>
+    
+    <h1>Welcome to My Numerical Analysis Page</h1>
+    
+    <nav>
+       <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="numerical.html">Numerical Analysis</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
   
-<body>
   
-  <h1>Welcome to My Numerical Analysis Page</h1>
-
-  
-  <nav>
-     <ul id="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="presentations.html">Presentations</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="numerical.html">Numerical Analysis</a></li>
-      <li><a href="#">Contact</a></li>
-
-    </ul>
-  </nav>
-
-
-  <div">Hello, World!</div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  
-<script>
-  const markdownContent = '# Hello World\n\nThis is a test of Markdown rendering.\n\n- Item 1\n- Item 2\n- [Link](https://example.com)';
-  const htmlContent = marked(markdownContent);
-  document.body.innerHTML = htmlContent;
-</script>
-
-<script>
-  fetch('numerical_projects/final_project/final_project.md')
-    .then(response => response.text())
-    .then(text => console.log(text))
-    .catch(error => console.error('Fetch error:', error));
-</script>
-
-
-  <div id="markdown-content"></div>
-    <script>
-        // Fetch the Markdown file
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
         fetch('numerical_projects/final_project/final_project.md')
             .then(response => response.text())
             .then(markdown => {
-                // Convert Markdown to HTML
-                const htmlContent = marked(markdown);
-                // Insert HTML into the page
-                document.getElementById('markdown-content').innerHTML = htmlContent;
+                const html = marked(markdown);
+                document.getElementById('markdown-content').innerHTML = html;
             })
-            .catch(error => console.error('Error fetching the Markdown file:', error));
-    </script>
+            .catch(error => console.error('Error loading Markdown file:', error));
+    });
+  </script>
+  
+  <div id="markdown-content"></div>
+
+    
+  <script>
+      // Fetch the Markdown file
+      fetch('numerical_projects/final_project/final_project.md')
+          .then(response => response.text())
+          .then(markdown => {
+              // Convert Markdown to HTML
+              const htmlContent = marked(markdown);
+              // Insert HTML into the page
+              document.getElementById('content').innerHTML = htmlContent;
+          })
+          .catch(error => console.error('Error fetching the Markdown file:', error));
+  </script>
+  
+  <div id="content">Loading Markdown...</div>
   
   <footer>
     <p>&copy; 2024 My GitHub Pages Site</p>
   </footer>
-
-</body>
+  
+  </body>
 </html>
