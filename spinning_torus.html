@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spinning Torus Animation</title>
+    <title>Spinning 3D Torus Animation</title>
     <style>
         body {
             font-family: monospace;
@@ -25,29 +25,30 @@
 <body>
     <div id="matrix" class="matrix"></div>
     <script>
-        const canvasSize = 30;
-        const canvas = Array(canvasSize).fill().map(() => Array(canvasSize).fill(' '));
+        const canvasHeight = 30;
+        const canvasWidth = 50;
+        const canvas = Array(canvasHeight).fill().map(() => Array(canvasWidth).fill(' '));
 
         const R1 = 1; // Torus tube radius
         const R2 = 2; // Torus ring radius
-        const K1 = canvasSize / (2 * (R1 + R2)); // Scaling factor
-        const K2 = canvasSize * 2; // Distance factor
+        const K1 = canvasWidth / (2 * (R1 + R2)); // Scaling factor
+        const K2 = canvasWidth * 2; // Distance factor
 
         let A = 0;
         let B = 0;
 
         function renderTorus() {
-            const zBuffer = Array(canvasSize).fill().map(() => Array(canvasSize).fill(0));
-            const chars = " .:-=+*#%@";
-            const shades = [0, 0.1, 0.3, 0.5, 0.7, 0.9];
-            const shadesChars = [" ", ".", ":", "-", "=", "+", "*", "#", "%", "@"];
+            const zBuffer = Array(canvasHeight).fill().map(() => Array(canvasWidth).fill(0));
+            const chars = [' ', 'o', 'e', 'a'];
             
-            for (let j = 0; j < canvasSize; j++) {
-                for (let i = 0; i < canvasSize; i++) {
+            // Clear canvas
+            for (let j = 0; j < canvasHeight; j++) {
+                for (let i = 0; i < canvasWidth; i++) {
                     canvas[j][i] = ' ';
                 }
             }
 
+            // Draw torus
             for (let theta = 0; theta < 2 * Math.PI; theta += 0.07) {
                 for (let phi = 0; phi < 2 * Math.PI; phi += 0.02) {
                     const cosTheta = Math.cos(theta);
@@ -66,15 +67,15 @@
                     const y = circleX * (sinB * cosPhi - sinA * cosB * sinPhi) + circleY * cosA * cosB;
                     const z = K2 + cosA * circleX * sinPhi + circleY * sinA;
                     const ooz = 1 / z;
-                    const xp = Math.floor(canvasSize / 2 + K1 * x * ooz);
-                    const yp = Math.floor(canvasSize / 2 - K1 * y * ooz);
+                    const xp = Math.floor(canvasWidth / 2 + K1 * x * ooz);
+                    const yp = Math.floor(canvasHeight / 2 - K1 * y * ooz);
 
                     const L = cosPhi * cosTheta * sinB - cosA * cosTheta * sinPhi - sinA * sinTheta + cosB * (cosA * sinTheta - cosTheta * sinA * sinPhi);
 
                     if (ooz > zBuffer[xp][yp]) {
                         zBuffer[xp][yp] = ooz;
-                        const L_index = Math.floor((L + 1) * 5);
-                        canvas[yp][xp] = shadesChars[L_index];
+                        const L_index = Math.floor((L + 1) * 1.5); // Index for chars
+                        canvas[yp][xp] = chars[L_index];
                     }
                 }
             }
