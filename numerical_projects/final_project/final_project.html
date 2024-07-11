@@ -7513,6 +7513,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
+Special thanks to Kyle Mandli for teaching me numerical PDEs. 
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3e1f64bc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7533,7 +7534,7 @@ a.anchor-link {
 <p>$$\Delta u = f$$</p>
 <p>where $u$ and $f$ are real or complex valued functions on a manifold. Usually $f$ is given and $u$ is sought. Poisson's Equation is an inhomogeneous differential equation due to the right side function $f$ being nonzero. In the case of $f=0$, the equation reduces to a Laplace equation $^{[5]}$.</p>
 <p>In 1 spatial dimension, Poisson's equation becomes an ODE</p>
-<p>$$u''(x)=f(x),$^{[5]}$$</p>
+<p>$$u''(x)=f(x),$$^{[5]}$$</p>
 <p>which is directly integrable to obtain the general solution</p>
 <p>$$u(x)= \int\int f(x)dx.$$</p>
 <p>We will consider a boundary value problem over the domain $[-1,1]$ with the boundary condition $u(-1,t)=u(1,t)=0$.</p>
@@ -7548,9 +7549,9 @@ a.anchor-link {
 <p>$$u(x)=\frac{e^{5x}-x\sinh(5)-\cosh(5)}{25},$$</p>
 <p>which will serve as a testing standard for the two methods.</p>
 <h3 id="Derivation-the-finite-difference-method">Derivation the finite difference method<a class="anchor-link" href="#Derivation-the-finite-difference-method">¶</a></h3><p>To derive the centered difference method for solving the one-dimensional Poisson's equation, we reduce the domain into $m$ evenly spaced points, called a mesh $^{[10]}$. We approximate the unknown function $u$ as the mesh points on the mesh points $x_i$. And we relate the number of mesh points $m$ to the distance between them with</p>
-<p>$$\Delta x = \frac{1}{m + 1}.$^{[1]}$$</p>
+<p>$$\Delta x = \frac{1}{m + 1}.^{[1]}$$</p>
 <p>The mesh points can be written as</p>
-<p>$$x_i = a + i \Delta x.$^{[9]}$$</p>
+<p>$$x_i = a + i \Delta x.^{[9]}$$</p>
 <p>We write $U_i$ to denote the approximate solution at the grid points $x_i$ and retain the lower-case $u(x)$ to denote the true solution. We apply the 2nd order, centered difference approximation for the 2nd derivative</p>
 <p>$$D^2 U_i = \frac{1}{\Delta x^2} (U_{i+1} - 2 U_i + U_{i-1}),^{[1]} $$</p>
 <p>so that we end up with the approximate algebraic expression at every grid point $^{[1]}$</p>
@@ -7716,7 +7717,7 @@ a.anchor-link {
     (D_N)_{00} = \frac{2 N^2 + 1}{6}, &amp; &amp; (D_N)_{NN} = -\frac{2N^2 + 1}{6}, \\
     (D_N)_{jj} = \frac{-x_j}{2(1 - x_j^2)}, &amp; &amp; j=1,\ldots,N-1 \\
     (D_N)_{ij} = \frac{c_i(-1)^{i+j}}{c_j (x_i - x_j)}, &amp; &amp; i\neq j, ~~ i,j = 0, \ldots, N
-\end{aligned}$^{[2]}$$</p>
+\end{aligned}^{[2]}$$</p>
 <p>where</p>
 <p>$$c_i = \left \{ \begin{aligned}
         2, &amp; &amp; i=0 \text{ or } N \\
@@ -8107,7 +8108,7 @@ global error = 0.000236879088
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em><strong>Figure 4:</strong> Finite difference solutions to $u''(x)=te^x)$ with $t\in\{0,.5,1,1.5,2,2.5,3,3.5,4,4.5\}$. This figure shows the approximated solutions at various times, with $101$ grid points. Printed above the figure are the global error at varying times.</em></p>
+<p><em><strong>Figure 4:</strong> Finite difference solutions to $u''(x)=te^x$ with $t\in\{0,.5,1,1.5,2,2.5,3,3.5,4,4.5\}$. This figure shows the approximated solutions at various times, with $101$ grid points. Printed above the figure are the global error at varying times.</em></p>
 <h4 id="Analysis-of-the-figure-and-the-error-results:">Analysis of the figure and the error results:<a class="anchor-link" href="#Analysis-of-the-figure-and-the-error-results:">¶</a></h4><p>As expected, the finite difference method's global error bottoms out when $t=0$, and the true solution is  $u(x)=c_1+c_2x$, with constant coefficients $c_1$ and $c_2$. This fits our expectations because the finite difference method should have zero error when approximating a linear solution, since the method approximates the second derivative at each point $x_i$ using a linear expression of the $U(x_i), U(x_{i+1})$, and $U(x_{-1})$. And furthermore, the error becomes progressively worse as the average curvature at the points $x_i$ increases, as expected. The error at $t=4.5$ is around 2 times larger in magnitude than the error at $t=.5$.</p>
 <h4 id="The-Chebyshev-spectral-method:">The Chebyshev spectral method:<a class="anchor-link" href="#The-Chebyshev-spectral-method:">¶</a></h4>
 </div>
