@@ -11,6 +11,7 @@
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
       }
     </script>
+    <script src="/js/donut.js"></script>
   </head>
   
 <body>
@@ -30,7 +31,13 @@
   </nav>
 
 
- <div><iframe src="spinning_cube.html" onload="resizeIframe(this)"></div> 
+  <div><iframe src="spinning_cube.html" onload="resizeIframe(this)"></div> 
+  
+  
+  <button onclick="anim1();">toggle animation</button></p>
+  <pre id="d" style="background-color:#000; color:#ccc; font-size: 10pt;">
+  </pre>
+
   
   <footer>
     <p>&copy; 2024 My GitHub Pages Site</p>
