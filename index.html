@@ -11,7 +11,7 @@
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
       }
     </script>
-    <script src="donut.js"></script>
+  
   </head>
   
 <body>
@@ -33,11 +33,14 @@
 
   <div><iframe src="spinning_cube.html" onload="resizeIframe(this)"></div> 
   
-  
-  <button onclick="anim1();">toggle animation</button></p>
-  <pre id="d" style="background-color:#000; color:#ccc; font-size: 10pt;">
-  </pre>
 
+  <pre id="d"></pre>
+  <canvas id="canvasdonut" width="300" height="300"></canvas>
+    
+  <button onclick="window.anim1()">Toggle ASCII Animation</button>
+  <button onclick="window.anim2()">Toggle Canvas Animation</button>
+  
+  <script src="donut.js"></script>
   
   <footer>
     <p>&copy; 2024 My GitHub Pages Site</p>
