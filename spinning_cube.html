@@ -109,7 +109,7 @@
             edges.forEach(([start, end]) => {
                 const [x1, y1] = projectedVertices[start];
                 const [x2, y2] = projectedVertices[end];
-                drawLine(x1, y1, x2, y2, '1');
+                drawLine(x1, y1, x2, y2, '.');
             });
 
             // Filling faces with "0" for more visibility
@@ -117,7 +117,7 @@
             for (let i = 0; i < 4; i++) {
                 const [x1, y1] = projectedVertices[i];
                 const [x2, y2] = projectedVertices[(i+1) % 4];
-                drawLine(x1, y1, x2, y2, '0');
+                drawLine(x1, y1, x2, y2, '.');
             }
 
             const matrix = document.getElementById('matrix');
