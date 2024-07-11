@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Cube Animation</title>
+    <title>Spinning 3D Cube Animation</title>
     <style>
         body {
             font-family: monospace;
@@ -18,15 +18,16 @@
             margin: 0;
         }
         .matrix {
-            font-size: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div id="matrix" class="matrix"></div>
     <script>
-        const canvasSize = 100;
-        const canvas = Array(canvasSize).fill().map(() => Array(canvasSize).fill(' '));
+        const canvasHeight = 30;
+        const canvasWidth = 50;
+        const canvas = Array(canvasHeight).fill().map(() => Array(canvasWidth).fill(' '));
 
         const vertices = [
             [-1, -1, -1],
@@ -68,15 +69,15 @@
 
         function project([x, y, z]) {
             const distance = 5;
-            const fov = canvasSize / (distance - z);
-            const xProj = Math.floor(canvasSize / 2 + x * fov);
-            const yProj = Math.floor(canvasSize / 2 - y * fov);
+            const fov = canvasWidth / (2 * distance - z);
+            const xProj = Math.floor(canvasWidth / 2 + x * fov);
+            const yProj = Math.floor(canvasHeight / 2 - y * fov);
             return [xProj, yProj];
         }
 
         function clearCanvas() {
-            for (let i = 0; i < canvasSize; i++) {
-                for (let j = 0; j < canvasSize; j++) {
+            for (let i = 0; i < canvasHeight; i++) {
+                for (let j = 0; j < canvasWidth; j++) {
                     canvas[i][j] = ' ';
                 }
             }
@@ -90,7 +91,7 @@
             let err = dx - dy;
 
             while (true) {
-                if (x1 >= 0 && x1 < canvasSize && y1 >= 0 && y1 < canvasSize) {
+                if (x1 >= 0 && x1 < canvasWidth && y1 >= 0 && y1 < canvasHeight) {
                     canvas[y1][x1] = char;
                 }
                 if (x1 === x2 && y1 === y2) break;
@@ -100,17 +101,39 @@
             }
         }
 
+        function fillFace(vertices, char) {
+            const [v0, v1, v2, v3] = vertices;
+            const [x0, y0] = v0;
+            const [x1, y1] = v1;
+            const [x2, y2] = v2;
+            const [x3, y3] = v3;
+
+            // Filling the face with the character
+            const minX = Math.max(0, Math.min(x0, x1, x2, x3));
+            const maxX = Math.min(canvasWidth - 1, Math.max(x0, x1, x2, x3));
+            const minY = Math.max(0, Math.min(y0, y1, y2, y3));
+            const maxY = Math.min(canvasHeight - 1, Math.max(y0, y1, y2, y3));
+
+            for (let x = minX; x <= maxX; x++) {
+                for (let y = minY; y <= maxY; y++) {
+                    canvas[y][x] = char;
+                }
+            }
+        }
+
         function render() {
             clearCanvas();
             const projectedVertices = vertices.map(v => project(rotate(v, angleX, angleY)));
 
-            edges.forEach(([start, end], index) => {
+            // Drawing edges and filling faces with characters
+            fillFace([projectedVertices[0], projectedVertices[1], projectedVertices[5], projectedVertices[4]], 'o');
+            fillFace([projectedVertices[1], projectedVertices[2], projectedVertices[6], projectedVertices[5]], 'e');
+            fillFace([projectedVertices[2], projectedVertices[3], projectedVertices[7], projectedVertices[6]], 'a');
+
+            edges.forEach(([start, end]) => {
                 const [x1, y1] = projectedVertices[start];
                 const [x2, y2] = projectedVertices[end];
-                let char = '0';
-                if (index < 4) char = '1'; // bottom edges
-                else if (index < 8) char = '/'; // top edges
-                drawLine(x1, y1, x2, y2, char);
+                drawLine(x1, y1, x2, y2, ' ');
             });
 
             const matrix = document.getElementById('matrix');
@@ -118,8 +141,8 @@
         }
 
         function animate() {
-            angleX += 0.005; // Half the speed
-            angleY += 0.005; // Half the speed
+            angleX += 0.02;
+            angleY += 0.03;
             render();
             requestAnimationFrame(animate);
         }
@@ -128,3 +151,4 @@
     </script>
 </body>
 </html>
+
