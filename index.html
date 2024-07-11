@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
-
+    <script>
+      function resizeIframe(obj) {
+        obj.style.width = obj.contentWindow.document.documentElement.scrollWidth + 'px';
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+      }
+    </script>
   </head>
   
 <body>
@@ -25,9 +30,8 @@
   </nav>
 
 
- <div><iframe src="3d_cube.html"></div> 
-  
- <div><iframe src="spinning_torus.html"></div> 
+ <div><iframe src="spinning_cube.html" onload="resizeIframe(this)"></div> 
+ <div><iframe src="spinning_torus.html" onload="resizeIframe(this)"></div> 
   
   <footer>
     <p>&copy; 2024 My GitHub Pages Site</p>
