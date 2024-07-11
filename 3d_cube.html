@@ -18,14 +18,14 @@
             margin: 0;
         }
         .matrix {
-            font-size: 14px;
+            font-size: 10px;
         }
     </style>
 </head>
 <body>
     <div id="matrix" class="matrix"></div>
     <script>
-        const canvasSize = 30;
+        const canvasSize = 100;
         const canvas = Array(canvasSize).fill().map(() => Array(canvasSize).fill(' '));
 
         const vertices = [
@@ -82,7 +82,7 @@
             }
         }
 
-        function drawLine(x1, y1, x2, y2) {
+        function drawLine(x1, y1, x2, y2, char) {
             const dx = Math.abs(x2 - x1);
             const dy = Math.abs(y2 - y1);
             const sx = x1 < x2 ? 1 : -1;
@@ -91,7 +91,7 @@
 
             while (true) {
                 if (x1 >= 0 && x1 < canvasSize && y1 >= 0 && y1 < canvasSize) {
-                    canvas[y1][x1] = '1';
+                    canvas[y1][x1] = char;
                 }
                 if (x1 === x2 && y1 === y2) break;
                 const e2 = 2 * err;
@@ -104,10 +104,13 @@
             clearCanvas();
             const projectedVertices = vertices.map(v => project(rotate(v, angleX, angleY)));
 
-            edges.forEach(([start, end]) => {
+            edges.forEach(([start, end], index) => {
                 const [x1, y1] = projectedVertices[start];
                 const [x2, y2] = projectedVertices[end];
-                drawLine(x1, y1, x2, y2);
+                let char = '0';
+                if (index < 4) char = '1'; // bottom edges
+                else if (index < 8) char = '/'; // top edges
+                drawLine(x1, y1, x2, y2, char);
             });
 
             const matrix = document.getElementById('matrix');
@@ -115,8 +118,8 @@
         }
 
         function animate() {
-            angleX += 0.02;
-            angleY += 0.03;
+            angleX += 0.01; // Half the speed
+            angleY += 0.015; // Half the speed
             render();
             requestAnimationFrame(animate);
         }
