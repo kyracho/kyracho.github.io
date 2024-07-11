@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spinning 3D Cube Animation</title>
+    <title>Spinning 3D Cube</title>
     <style>
         body {
             font-family: monospace;
@@ -25,8 +25,8 @@
 <body>
     <div id="matrix" class="matrix"></div>
     <script>
-        const canvasHeight = 30;
-        const canvasWidth = 50;
+        const canvasHeight = 20;
+        const canvasWidth = 30;
         const canvas = Array(canvasHeight).fill().map(() => Array(canvasWidth).fill(' '));
 
         const vertices = [
@@ -101,48 +101,32 @@
             }
         }
 
-        function fillFace(vertices, char) {
-            const [v0, v1, v2, v3] = vertices;
-            const [x0, y0] = v0;
-            const [x1, y1] = v1;
-            const [x2, y2] = v2;
-            const [x3, y3] = v3;
-
-            // Filling the face with the character
-            const minX = Math.max(0, Math.min(x0, x1, x2, x3));
-            const maxX = Math.min(canvasWidth - 1, Math.max(x0, x1, x2, x3));
-            const minY = Math.max(0, Math.min(y0, y1, y2, y3));
-            const maxY = Math.min(canvasHeight - 1, Math.max(y0, y1, y2, y3));
-
-            for (let x = minX; x <= maxX; x++) {
-                for (let y = minY; y <= maxY; y++) {
-                    canvas[y][x] = char;
-                }
-            }
-        }
-
         function render() {
             clearCanvas();
             const projectedVertices = vertices.map(v => project(rotate(v, angleX, angleY)));
 
-            // Drawing edges and filling faces with characters
-            fillFace([projectedVertices[0], projectedVertices[1], projectedVertices[5], projectedVertices[4]], 'o');
-            fillFace([projectedVertices[1], projectedVertices[2], projectedVertices[6], projectedVertices[5]], 'e');
-            fillFace([projectedVertices[2], projectedVertices[3], projectedVertices[7], projectedVertices[6]], 'a');
-
+            // Drawing edges
             edges.forEach(([start, end]) => {
                 const [x1, y1] = projectedVertices[start];
                 const [x2, y2] = projectedVertices[end];
-                drawLine(x1, y1, x2, y2, ' ');
+                drawLine(x1, y1, x2, y2, '1');
             });
+
+            // Filling faces with "0" for more visibility
+            // Faces are defined by 4 vertices each; here we use basic loop to fill some part for simplicity
+            for (let i = 0; i < 4; i++) {
+                const [x1, y1] = projectedVertices[i];
+                const [x2, y2] = projectedVertices[(i+1) % 4];
+                drawLine(x1, y1, x2, y2, '0');
+            }
 
             const matrix = document.getElementById('matrix');
             matrix.textContent = canvas.map(row => row.join('')).join('\n');
         }
 
         function animate() {
-            angleX += 0.02;
-            angleY += 0.03;
+            angleX += 0.03;
+            angleY += 0.02;
             render();
             requestAnimationFrame(animate);
         }
