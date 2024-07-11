@@ -10,7 +10,6 @@ var A=1, B=1;
 // donut.c code
 var asciiframe=function() {
 var b=[];
-console.log(typeof b)
 var z=[];
 A += 0.07;
 B += 0.03;
@@ -20,8 +19,6 @@ for(var k=0;k<1760;k++) {
   b[k]=k%80 == 79 ? "\n" : " ";
   z[k]=0;
 }
-
-console.log(typeof b)
 
     
 for(var j=0;j<6.28;j+=0.07) { // j <=> theta
@@ -43,7 +40,6 @@ for(var j=0;j<6.28;j+=0.07) { // j <=> theta
     }
   }
 }
-console.log(typeof b)
 pretag.innerHTML = b.join("");
 };
 
