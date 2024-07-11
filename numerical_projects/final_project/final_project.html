@@ -7533,7 +7533,7 @@ a.anchor-link {
 <p>$$\Delta u = f$$</p>
 <p>where $u$ and $f$ are real or complex valued functions on a manifold. Usually $f$ is given and $u$ is sought. Poisson's Equation is an inhomogeneous differential equation due to the right side function $f$ being nonzero. In the case of $f=0$, the equation reduces to a Laplace equation $^{[5]}$.</p>
 <p>In 1 spatial dimension, Poisson's equation becomes an ODE</p>
-<p>$$u''(x)=f(x),$^{[5]}$$$</p>
+<p>$$u''(x)=f(x),$^{[5]}$$</p>
 <p>which is directly integrable to obtain the general solution</p>
 <p>$$u(x)= \int\int f(x)dx.$$</p>
 <p>We will consider a boundary value problem over the domain $[-1,1]$ with the boundary condition $u(-1,t)=u(1,t)=0$.</p>
@@ -7548,9 +7548,9 @@ a.anchor-link {
 <p>$$u(x)=\frac{e^{5x}-x\sinh(5)-\cosh(5)}{25},$$</p>
 <p>which will serve as a testing standard for the two methods.</p>
 <h3 id="Derivation-the-finite-difference-method">Derivation the finite difference method<a class="anchor-link" href="#Derivation-the-finite-difference-method">¶</a></h3><p>To derive the centered difference method for solving the one-dimensional Poisson's equation, we reduce the domain into $m$ evenly spaced points, called a mesh $^{[10]}$. We approximate the unknown function $u$ as the mesh points on the mesh points $x_i$. And we relate the number of mesh points $m$ to the distance between them with</p>
-<p>$$\Delta x = \frac{1}{m + 1}.$^{[1]}$$$</p>
+<p>$$\Delta x = \frac{1}{m + 1}.$^{[1]}$$</p>
 <p>The mesh points can be written as</p>
-<p>$$x_i = a + i \Delta x.$^{[9]}$$$</p>
+<p>$$x_i = a + i \Delta x.$^{[9]}$$</p>
 <p>We write $U_i$ to denote the approximate solution at the grid points $x_i$ and retain the lower-case $u(x)$ to denote the true solution. We apply the 2nd order, centered difference approximation for the 2nd derivative</p>
 <p>$$D^2 U_i = \frac{1}{\Delta x^2} (U_{i+1} - 2 U_i + U_{i-1}),^{[1]} $$</p>
 <p>so that we end up with the approximate algebraic expression at every grid point $^{[1]}$</p>
