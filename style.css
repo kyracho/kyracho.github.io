@@ -97,6 +97,16 @@ button {
   transition: background-color 0.3s ease;
 }
 
+pre {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+canvas {
+  background-color: #000;
+}
+
+
 button:hover {
   background-color: #e68900; /* Darker shade on hover */
 }
