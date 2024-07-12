@@ -8,12 +8,10 @@
   position: relative;
 }
 .aligned-text::before {
-  content: 'apple';
   position: absolute;
   left: 0;
 }
 .aligned-text::after {
-  content: 'pear';
   position: absolute;
   right: 0;
 }
