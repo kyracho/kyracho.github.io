@@ -22,6 +22,7 @@ article footer {
 
 article h1, article h2, article h3 {
   color: #333;
+  text-align: left;
 }
 
 article header {
