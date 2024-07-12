@@ -1,21 +1,5 @@
 /* Custom CSS for my GitHub Pages */
 
-/* Aligned text */
-
-.aligned-text {
-  display: block;
-  width: 100%;
-  position: relative;
-}
-.aligned-text::before {
-  position: absolute;
-  left: 0;
-}
-.aligned-text::after {
-  position: absolute;
-  right: 0;
-}
-
 /* Article style */
 article {
   background-color: #fff;
