@@ -1,5 +1,22 @@
 /* Custom CSS for my GitHub Pages */
 
+/* Aligned text */
+
+.aligned-text {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.aligned-text::before {
+  content: 'apple';
+  position: absolute;
+  left: 0;
+}
+.aligned-text::after {
+  content: 'pear';
+  position: absolute;
+  right: 0;
+}
 
 /* Article style */
 article {
