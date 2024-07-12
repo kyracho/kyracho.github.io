@@ -1,13 +1,5 @@
 /* Custom CSS for my GitHub Pages */
 
-/* Reset some default browser styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
 /* Basic Body Styles */
 body {
   background-color: #f0f4f8; /* Light background color */
@@ -15,6 +7,116 @@ body {
   line-height: 1.6; /* Improved readability */
   padding: 20px;
   text-align: center;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff9800; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e68900; /* Darker shade on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Article style */
+article {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+article footer {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+article h1, article h2, article h3 {
+  color: #333;
+}
+
+article header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+article img {
+  display: block;
+  height: auto;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+article p {
+  line-height: 1.8;
+  margin: 1em 0;
+}
+
+/* Canvas Styles */
+canvas {
+  background-color: #000;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #ff9800; /* Submit button color */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e68900; /* Darker shade on hover */
+}
+
+form label {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background for the footer */
+  color: #fff; /* Light text color */
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9em;
+  margin: 0;
 }
 
 /* Header Styles */
@@ -42,6 +144,23 @@ header p {
   text-align: center;
 }
 
+/* Main Content Styles */
+main {
+  background-color: #fff; /* White background for content area */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+main h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* Navigation Bar Styles */
 nav {
   background-color: #444; /* Slightly lighter background */
@@ -49,9 +168,9 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 nav ul li {
@@ -60,114 +179,30 @@ nav ul li {
 
 nav ul li a {
   color: #fff; /* White text color for links */
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
   color: #ff9800; /* Highlight on hover */
 }
 
-/* Main Content Styles */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #fff; /* White background for content area */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center;
-}
-
-main h2 {
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-/* Button Styles */
-button {
-  background-color: #ff9800; /* Primary button color */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-}
-
-pre {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-canvas {
-  background-color: #000;
-}
-
-
-button:hover {
-  background-color: #e68900; /* Darker shade on hover */
-}
-
-button:focus {
-  outline: none;
-}
-
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-form input,
-form textarea {
-  border: 1px solid #ddd; /* Light border */
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-form input[type="submit"] {
-  background-color: #ff9800; /* Submit button color */
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-  background-color: #e68900; /* Darker shade on hover */
-}
-
-/* Footer Styles */
-footer {
-  background-color: #333; /* Dark background for the footer */
-  color: #fff; /* Light text color */
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-footer p {
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-size: 0.9em;
+  padding: 0;
 }
 
 /* Utility Classes */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .centered {
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .hidden {
@@ -177,3 +212,10 @@ footer p {
 .visible {
   display: block;
 }
+
+/* Preformatted Text Styles */
+pre {
+  font-size: 12px;
+  line-height: 12px;
+}
+
