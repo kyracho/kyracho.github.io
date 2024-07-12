@@ -191,6 +191,8 @@ nav ul li a:hover {
   color: #ff9800; /* Highlight on hover */
 }
 
+/* Navigation Bar Classes*/
+
 .navbar {
     overflow: hidden;
     background-color: #333;
