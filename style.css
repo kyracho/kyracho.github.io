@@ -172,12 +172,12 @@ main h2 {
 .navbar {
     overflow: hidden;
     background-color: #333;
-    justify-content: center; /* Centers the content horizontally */
+    
 }
 
 .navbar a {
     float: left;
-    display: block;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 10px 20px;
