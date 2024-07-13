@@ -91,7 +91,7 @@ canvas {
     color: white;
     font-family: inherit;
     font-size: 16px;  
-    height: 40px;
+    height: 45px;
     margin: 0;
     outline: none;
     padding: 10px 20px;
@@ -117,6 +117,7 @@ canvas {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    height: 45px;
 }
 
 .dropdown:hover .dropdown-content {
