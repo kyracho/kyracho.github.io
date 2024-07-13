@@ -195,7 +195,9 @@ nav ul li a:hover {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #333
+    justify-content: center;
+    text-align: center;
 }
 
 .navbar a {
