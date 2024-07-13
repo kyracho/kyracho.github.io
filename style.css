@@ -122,6 +122,7 @@ canvas {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    height: 45px;
 }
 
 
