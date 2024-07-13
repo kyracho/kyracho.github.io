@@ -172,6 +172,7 @@ main h2 {
 .navbar {
     overflow: hidden;
     background-color: #333;
+    justify-content: center; /* Centers the content horizontally */
 }
 
 .navbar a {
