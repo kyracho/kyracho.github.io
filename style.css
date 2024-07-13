@@ -165,31 +165,7 @@ main h2 {
   text-align: center;
 }
 
-/* Navigation Bar Styles */
-nav {
-  background-color: #444; /* Slightly lighter background */
-  padding: 10px 0;
-}
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff; /* White text color for links */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #ff9800; /* Highlight on hover */
-}
 
 /* Navigation Bar Classes*/
 
