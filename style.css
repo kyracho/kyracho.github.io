@@ -223,8 +223,8 @@ nav ul li a:hover {
 /* Non-grid specific CSS */  
 body {
   margin: 10px;
-  color: #2291db;
-  background-color: #2e9be4;
+  color: #000000;
+  background-color: #404142;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.15em;
   text-rendering: optimizeLegibility;
