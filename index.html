@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" href="flavico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css"> 
-    <script>
-      function resizeIframe(obj) {
-        obj.style.width = obj.contentWindow.document.documentElement.scrollWidth + 'px';
-        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-      }
-    </script>
+    <!-- this part is loaded but isn't visible -->
+    <head> 
+        <title>Test doc</title>
+        <link rel="icon" href="flavico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css"> 
+        
+        <style>
+            #tsparticles {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+            }
+            .header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
     
-  </head>
+       
+        
+
+    </head>
   
-<body>
+    <body>
 
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="presentations.html">Presentations</a>
-    <a href="blog.html">Blog</a>
-    <div class="dropdown">
-        <button class="dropbtn">Numerical Analysis
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="chebyshev.html">Implementing the Chebyshev spectral method to solve the Poisson equation</a>
-            <a href="#link2">Link 2</a>
-            <a href="#link3">Link 3</a>
-        </div>
-    </div> 
-    <a href="#contact">Contact</a>
-  </div>
+       
+      
+        <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+    <script>
+        fetch('amongus.json')
+        .then(response => response.json())
+        .then(json => {
+            tsParticles.load('particles-js', json);
+        })
+        .catch(error => {
+            console.error('Error loading JSON configuration:', error);
+        });
+    </script>
+     
 
-  <div>
-  </div>
-
-  <header>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This page is still in its infancy and will become populated as it progresses.</p>
-  </header>
-
-  <div><iframe src="assets/spinning_cube.html" onload="resizeIframe(this)"></div> 
-  
-  
-  <footer>
-    <p>&copy; 2024 My GitHub Pages Site</p>
-  </footer>
-
-</body>
+      
+    </body>
 </html>
 
 
