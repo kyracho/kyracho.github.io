@@ -45,108 +45,98 @@ article p {
 
 
 /* Basic Body Styles */
-body {
-  background-color: #f0f4f8; /* Light background color */
-  color: #333; /* Dark text color for contrast */
-  line-height: 1.6; /* Improved readability */
+/*body {
+  background-color: #f0f4f8; /* Light background color 
+  color: #333; /* Dark text color for contrast 
+  line-height: 1.6; /*Improved readability 
   padding: 20px;
   text-align: center;
-}
+} 
 
-/* Button Styles */
-button {
-  background-color: #ff9800; /* Primary button color */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 0px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #e68900; /* Darker shade on hover */
-}
-
-button:focus {
-  outline: none;
-}
 
 /* Canvas Styles */
 canvas {
   background-color: #000;
 }
 
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form input,
-form textarea {
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 5px;
-  font-size: 1em;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-form input[type="submit"] {
-  background-color: #ff9800; /* Submit button color */
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-  background-color: #e68900; /* Darker shade on hover */
-}
-
-form label {
-  color: #333;
-  margin-bottom: 5px;
-}
 
 /* Footer Styles */
 footer {
-  background-color: #333; /* Dark background for the footer */
-  color: #fff; /* Light text color */
-  margin-top: 20px;
-  padding: 20px;
+  position: relative;
+  height: 150px;
+  color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer p {
-  font-size: 0.9em;
-  margin: 0;
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
+
+.footer-content h1 {
+  font-size: .8em;
+  margin: 0;
+  pointer-events: none;
+}
+
+.footer-content p {
+  font-size: .8em;
+  pointer-events: none;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 20px;
+}
+
+
 
 /* Header Styles */
 header {
-  background-color: #333; /* Dark background for the header */
-  color: #fff; /* Light text color */
-  padding: 20px;
+  position: relative;
+  height: 150px;
+  color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #374046; /* Adds a bottom border */
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-align: center;
+#particle-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-header h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-align: center;
+.header-content {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 
-header p {
-  font-size: 1.2em;
-  text-align: center;
+.header-content h1 {
+  font-size: 3em;
+  margin: 0;
+  pointer-events: none;
 }
+
+.header-content p {
+  font-size: 1.5em;
+  pointer-events: none;
+}
+
 
 /* Main Content Styles */
 main {
@@ -167,70 +157,90 @@ main h2 {
 
 
 
-/* Navigation Bar Classes*/
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-.navbar a {
-    float: left;
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
+nav ul li {
+  margin: 0 15px;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;  
-    height: 45px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 10px 20px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+nav ul li a:hover {
+  background-color: #555;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+/* Non-grid specific CSS */  
+body {
+  margin: 10px;
+  color: #374046;
+  background-color: #374046;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.item {
+  background-color: #ffffff;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.photothumb{
+  width: 100%;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.title {
+  padding: 20px;
+ }
+
+.title h3{
+  font-size: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
 }
+
+.project .title{
+  background-color: #607D8B;
+}
+
+.blog .title{
+  background-color: #ff9800;
+}
+
+.photo .title{
+  background-color: #f44336;
+}
+
+.desc{
+  padding: 10px 10px 5px 10px;
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.desc p{
+  margin-bottom: 10px;
+}
+
 
 /* Reset some default browser styles */
 * {
@@ -264,4 +274,15 @@ pre {
   line-height: 12px;
 }
 
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+}
 
