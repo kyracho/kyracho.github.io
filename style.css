@@ -44,16 +44,6 @@ article p {
 }
 
 
-/* Basic Body Styles */
-/*body {
-  background-color: #f0f4f8; /* Light background color 
-  color: #333; /* Dark text color for contrast 
-  line-height: 1.6; /*Improved readability 
-  padding: 20px;
-  text-align: center;
-} 
-
-
 /* Canvas Styles */
 canvas {
   background-color: #000;
@@ -143,7 +133,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 10px solid #374046; /* Adds a bottom border */
+  margin-bottom: 10px; /* Add gap below the header */
 }
 
 #particle-background {
@@ -206,7 +196,7 @@ main {
 }
 
 main h2 {
-  color: #333;
+  color: #2c2c2c;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -227,36 +217,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #313131;
 }
 
 /* Non-grid specific CSS */  
 body {
   margin: 10px;
-  color: #374046;
-  background-color: #374046;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.15em;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-.item {
-  background-color: #ffffff;
-}
-
-.photothumb{
-  width: 100%;
-}
-
-.title {
-  padding: 20px;
- }
-/* Non-grid specific CSS */  
-body {
-  margin: 10px;
-  color: #374046;
-  background-color: #374046;
+  color: #2291db;
+  background-color: #2e9be4;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.15em;
   text-rendering: optimizeLegibility;
@@ -282,12 +250,13 @@ body {
 }
 
 .project .title{
+  font-size: 1em;
   background-color: #607D8B;
 }
 
 .blog .title{
   background-color: #ff9800;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -296,11 +265,9 @@ body {
   background-color: #607D8B;
 }
 
-.blog .title{
-  background-color: #ff9800;
-}
 
 .photo .title{
+  font-size: 1em;
   background-color: #f44336;
 }
 
