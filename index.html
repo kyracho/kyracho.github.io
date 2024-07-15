@@ -1,54 +1,128 @@
+
 <!DOCTYPE html>
 <html>
     <!-- this part is loaded but isn't visible -->
     <head> 
-        <title>Test doc</title>
+        <title>My Portfolio</title>
         <link rel="icon" href="flavico.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css"> 
-        
-        <style>
-            #tsparticles {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: #000;
-            }
-            .header-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            }
-        </style>
 
-        <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-    
-       
-        
+        <script>
+          window.onload = function() {
+              // Initialize particles.js
+              
+              particlesJS('particle-background', {
+                  "particles": {
+                      "number": {
+                          "value": 100
+                      },
+                      "size": {
+                          "value": 3
+                      }
+                  },
+                  "interactivity": {
+                      "events": {
+                          "onhover": {
+                              "enable": true,
+                              "mode": "repulse"
+                          }
+                      }
+                  }});
+            
+  
+              // Resize grid items
+              function resizeGridItem(item) {
+                  var grid = document.getElementsByClassName("grid")[0];
+                  var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+                  var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+                  var rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+                  item.style.gridRowEnd = "span " + rowSpan;
+              }
+  
+              function resizeAllGridItems() {
+                  var allItems = document.getElementsByClassName("item");
+                  for (var x = 0; x < allItems.length; x++) {
+                      resizeGridItem(allItems[x]);
+                  }
+              }
+  
+              function resizeInstance(instance) {
+                  var item = instance.elements[0];
+                  resizeGridItem(item);
+              }
+  
+              resizeAllGridItems();
+              window.addEventListener("resize", resizeAllGridItems);
+  
+              var allItems = document.getElementsByClassName("item");
+              for (var x = 0; x < allItems.length; x++) {
+                  imagesLoaded(allItems[x], resizeInstance);
+              }
+          };
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
     </head>
   
     <body>
+    <body>
 
-       
+
+      <header>
+        <div id="particle-background"></div>
+        <div class="header-content">
+            <h1>Welcome to My Website</h1>
+            <p>Data Analyst Portfolio</p>
+          
+        </div>
       
-        <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-    <script>
-        fetch('among.json')
-        .then(response => response.json())
-        .then(json => {
-            tsParticles.load('particles-js', json);
-        })
-        .catch(error => {
-            console.error('Error loading JSON configuration:', error);
-        });
-    </script>
+      </header>
      
 
+      <div class="grid">
+          <div class="item blog">
+            <div class="content">
+              <div class="title">
+                <h3>1. Blog post: </h3>
+              </div>
+              <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item photo">
+            <div class="content">
+              <div class="title">
+                <h3>2. Photo</h3>
+              </div>
+              <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+              <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+              </div>
+            </div>
+          </div>
+          <div class="item project">
+            <div class="content">
+              <div class="title">
+                <h3>3. Project</h3>
+              </div>
+              <div class="desc">
+                <img src="https://assets.codepen.io/881020/dog3.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
+      <footer>
+        <div id="particle-background"></div>
+          <div class="footer-content">
+          <p>&copy; 2024 Kyra Cho. All rights reserved.</p>
+        </div>
+      </footer>
+
     </body>
 </html>
 
-
-    
