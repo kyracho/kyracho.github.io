@@ -162,7 +162,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 10px solid #374046; /* Adds a bottom border */
+  
 }
 
 #particle-background {
@@ -184,15 +184,8 @@ header {
   font-size: 3em;
   margin: 0;
   pointer-events: none;
-.header-content h1 {
-  font-size: 3em;
-  margin: 0;
-  pointer-events: none;
 }
 
-.header-content p {
-  font-size: 1.5em;
-  pointer-events: none;
 .header-content p {
   font-size: 1.5em;
   pointer-events: none;
@@ -225,41 +218,6 @@ nav {
   padding: 10px 0;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -267,8 +225,6 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav ul li a:hover {
-  background-color: #555;
 nav ul li a:hover {
   background-color: #555;
 }
@@ -330,7 +286,6 @@ body {
 
 .blog .title{
   background-color: #ff9800;
-.title h3{
   font-size: 1.2em;
   color: #ffffff;
   text-transform: uppercase;
@@ -344,8 +299,6 @@ body {
   background-color: #ff9800;
 }
 
-.photo .title{
-  background-color: #f44336;
 .photo .title{
   background-color: #f44336;
 }
@@ -360,9 +313,8 @@ body {
   float: left;
 }
 
-.desc p{
+.desc {
   margin-bottom: 10px;
-.desc{
   padding: 10px 10px 5px 10px;
 }
 
