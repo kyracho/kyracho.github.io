@@ -43,55 +43,43 @@ article p {
   margin: 1em 0;
 }
 
-
-/* Canvas Styles */
-canvas {
-  background-color: #000;
-}
-
-
 /* Footer Styles */
 footer {
+  align-items: center;
+  background-color: #000000; 
+  color: rgb(255, 255, 255); 
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-top: 10px; 
   position: relative;
-  height: 150px;
-  color: white;
-  position: relative;
-  height: 150px;
-  color: white;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+.footer {
+  background-image: url('assets/footer-background.jpg'); /* Path to your JPG file */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: repeat; 
+  color: white; /* Text color to contrast with the background */
+  height: 200px;
+  padding: 20px; /* Padding inside the footer */
+  text-align: center; 
+}
 
 .footer-content {
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
+  max-width: 1200px; /* Max width for the content */
+  margin: 0 auto; /* Center the content */
 }
 
-.footer-content h1 {
-  font-size: .8em;
-
-.footer-content {
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
+.footer a {
+  color: inherit; /* Use the same color as the parent element */
+  text-decoration: none; /* Remove the underline */
 }
 
-.footer-content h1 {
-  font-size: .8em;
-  margin: 0;
-  pointer-events: none;
-}
-
-.footer-content p {
-  font-size: .8em;
-  pointer-events: none;
+.footer a:hover {
+  color: #313131; /* Change color on hover (optional) */
+  text-decoration: underline; /* Underline on hover (optional) */
 }
 
 /* grid */
@@ -101,38 +89,19 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
   grid-auto-rows: 20px;
 }
-
-
-  pointer-events: none;
-}
-
-.footer-content p {
-  font-size: .8em;
-  pointer-events: none;
-}
-
-/* grid */
-.grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-rows: 20px;
-}
-
-
 
 /* Header Styles */
 header {
-  position: relative;
-  height: 250px;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 10px; /* Add gap below the header */
+  color: white;
+  background-color: #ff9800; 
+  display: flex;
+  height: 250px;
+  margin-bottom: 10px; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
 }
-
 
 .header-content {
   position: relative;
@@ -142,7 +111,6 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .header-content h1 {
@@ -183,7 +151,6 @@ main h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-
 
 
 nav {
@@ -307,6 +274,7 @@ body {
   display: block;
 }
 
+/* particle background */ 
 #particle-background {
   position: absolute;
   width: 100%;
@@ -322,14 +290,3 @@ pre {
   line-height: 12px;
 }
 
-#tsparticles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-}
-
-video {
-  width: 100%;
-  max-width: 600px;
-}
