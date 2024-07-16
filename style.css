@@ -93,6 +93,11 @@ footer {
   grid-auto-rows: 20px;
 }
 
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
 /* Header Styles */
 header {
   align-items: center;
