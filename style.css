@@ -47,7 +47,7 @@ article p {
 footer {
   align-items: center;
   background-color: #000000; 
-  color: rgb(255, 255, 255); 
+  color: #313131; 
   display: flex;
   height: 200px;
   justify-content: center;
@@ -61,7 +61,6 @@ footer {
   background-size: cover; 
   background-position: center; 
   background-repeat: repeat; 
-  color: white; /* Text color to contrast with the background */
   height: 200px;
   padding: 20px; /* Padding inside the footer */
   text-align: center; 
@@ -70,6 +69,10 @@ footer {
 .footer-content {
   max-width: 1200px; /* Max width for the content */
   margin: 0 auto; /* Center the content */
+}
+
+.footer p {
+  color: #ffffff;
 }
 
 .footer a {
