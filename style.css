@@ -101,7 +101,7 @@ a {
 /* Header Styles */
 header {
   align-items: center;
-  color: white;
+  color: #313131;
   background-color: #ff9800; 
   display: flex;
   height: 250px;
@@ -145,7 +145,7 @@ header {
 
 /* Main Content Styles */
 main {
-  background-color: #fff; /* White background for content area */
+  background-color: #ffffff; /* White background for content area */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   margin: 0 auto;
