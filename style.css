@@ -124,10 +124,7 @@ footer {
 /* Header Styles */
 header {
   position: relative;
-  height: 150px;
-  color: white;
-  position: relative;
-  height: 150px;
+  height: 250px;
   color: white;
   text-align: center;
   display: flex;
@@ -136,14 +133,6 @@ header {
   margin-bottom: 10px; /* Add gap below the header */
 }
 
-#particle-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
 
 .header-content {
   position: relative;
@@ -156,22 +145,13 @@ header {
   
 }
 
-#particle-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.header-content {
-  position: relative;
-  z-index: 1;
+.header-content h1 {
+  font-size: 3em;
+  margin: 0;
   pointer-events: none;
 }
 
-.header-content h1 {
+.header-content h2 {
   font-size: 3em;
   margin: 0;
   pointer-events: none;
@@ -182,7 +162,10 @@ header {
   pointer-events: none;
 }
 
-
+.header-content a { 
+  font-size: 1.5em;
+  pointer-events: auto;
+}
 
 /* Main Content Styles */
 main {
@@ -322,6 +305,15 @@ body {
 
 .visible {
   display: block;
+}
+
+#particle-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /* Preformatted Text Styles */
