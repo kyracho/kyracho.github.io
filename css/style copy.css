@@ -18,6 +18,11 @@ main h2 {
   text-align: center;
 }
 
+
+.spacer {
+  height: 10px; /* Adds vertical space */
+  }
+
 /* Section specific styles */
 
 
@@ -47,25 +52,34 @@ main h2 {
 }
 #section1 h1 {
   font-family: 'Roboto', sans-serif; /* Example font family */
-  font-size: 3em; /* Example font size */
+  font-size: 5em; /* Example font size */
   margin: 0;
+  margin-bottom: 10px;
   color: #333; /* Example text color */
+}
+#section1 h2 {
+  font-family: 'Roboto', sans-serif; /* Example font family */
+  font-size: 1.5em; /* Example font size */
+  margin: 0;
+  color: #666; /* Example text color */
 }
 #section1 p {
   font-family: 'Open Sans', sans-serif; /* Example font family */
-  font-size: 1.5em; /* Example font size */
+  font-size: 1.3em; /* Example font size */
   color: #666; /* Example text color */
 }
 
 /* Section 2 */
 #section2 {
-  background-color: #feb47b;
+  background-color: #feb47b00;
 }
 
 /* Section 3 */
 #section3 {
   background-color: #ffb3ba;
 }
+
+
 html {
   scroll-behavior: smooth;
 }

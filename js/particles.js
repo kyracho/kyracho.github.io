@@ -1,1 +1,1 @@
-tsParticles.loadJSON("tsparticles", "particles.json");
+tsParticles.loadJSON("tsparticles", "json/particles.json");

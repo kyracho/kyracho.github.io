@@ -111,7 +111,7 @@ header {
 }
 
 .header-content h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin: 0;
   pointer-events: none;
 }
@@ -125,6 +125,7 @@ header {
 .header-content p {
   font-size: 1.5em;
   pointer-events: none;
+  color: #666;
 }
 
 .header-content a { 
@@ -300,3 +301,6 @@ pre {
   line-height: 12px;
 }
 
+.spacer {
+  height: 10px; /* Adds 10px of space */
+  }

@@ -3,12 +3,31 @@
 <html>
     <!-- any code in <head> is loaded upon but isn't visible -->
     <head> 
-        <title>Kyra's Portfolio</title>
+        <title>(Version 1) Kyra Cho : Personal Website</title>
         <link rel="icon" href="assets/favicon.ico">
         <link rel="stylesheet" href="css/style.css"> 
-       
-        <!-- this is the javascript code --> 
+        <link rel="stylesheet" href="css/footer.css"> 
+        <link rel="stylesheet" href="css/box.css"> 
+        <link rel="stylesheet" href="css/particles.css" />
+        <link rel="stylesheet" href="css/auth.css"/>
+
+
+        <style>
+        header {
+          align-items: center;
+          color: #313131;
+          background-color: #00eaff; 
+          display: flex;
+          height: 100vh;
+          margin-bottom: 10px; 
+          position: relative;
+          justify-content: center;
+          text-align: center;
+        }
+        </style>
+      
         <script>
+          /* This is the Javascript for the maronsy style grid.*/
           window.onload = function() {
               // Initialize particles.js
               particlesJS('particle-background', {
@@ -70,7 +89,10 @@
       <header>
         <div class="header-content">
           <h1>Kyra Cho</h1>
-          <p>B.A., M.S., Columbia University, NY</p>
+          <div class="spacer"></div>
+          <p>M.S., Applied Math, BS., Math.</p>
+          <div class="spacer"></div>
+          <p>Columbia University, NY</p>
 
           <!-- social media links-->
           <div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;">
@@ -88,11 +110,17 @@
             <a href="mailto:wsc2119@columbia.edu" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:62px;height:62px;padding:0;margin:3px;color:#ffffff;"><svg class="niftybutton-email" style="display:block;fill:currentColor" data-donate="true" data-tag="ema" data-name="Email" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>Email</title>
                 <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path></svg>
             </a>
-
+          </div>
+          
+          <div>
+            <div class="spacer"></div>
+            <a class="button" href="https://www.example.com" style="float: left;">See more</a>
           </div>
         </div>
-      
-        <!-- particle animation-->
+        
+    
+
+        <!-- Particle animation-->
         <div id="particle-background"></div>
       </header>
      
@@ -145,9 +173,7 @@
       
       <!-- footer -->
       <footer class="footer">
-        <div class="footer-content">
-          <!-- <p class="footer-bottom-text"><a href="https://devblogs.microsoft.com/visualstudio/celebrating-ndeam-vs-code-visual-studio/" target="_blank" rel="noopener noreferrer">Click here for the inspiration for this footer</a></p> -->
-        </div>
+        <p> &copy Kyra Cho</p>
       </footer>
 
     </body>
