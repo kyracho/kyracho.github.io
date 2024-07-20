@@ -1,0 +1,49 @@
+/* Footer Styles */
+footer {
+    align-items: center;
+    background-color: #00000000; 
+    color: #313131; 
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin-top: 10px; 
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .footer {
+    background-image: url('assets/footer-background.jpg'); /* Path to your JPG file */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    height: 200px;
+    padding: 20px; /* Padding inside the footer */
+    text-align: center; 
+    z-index: 10;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the content */
+    z-index: 10;
+    
+  }
+  
+  .footer p {
+    color: #ffffff;
+    z-index: 10;
+  }
+  
+  .footer a {
+    color: inherit; /* Use the same color as the parent element */
+    text-decoration: none; /* Remove the underline */
+    z-index: 10;
+  }
+  
+  .footer a:hover {
+    color: #313131; /* Change color on hover (optional) */
+    text-decoration: underline; /* Underline on hover (optional) */
+    z-index: 10;
+  }
+  

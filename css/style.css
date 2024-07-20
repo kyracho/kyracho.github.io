@@ -85,24 +85,13 @@ footer {
   text-decoration: underline; /* Underline on hover (optional) */
 }
 
-/* grid */
-.grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-rows: 20px;
-}
 
-a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-}
 
 /* Header Styles */
 header {
   align-items: center;
   color: #313131;
-  background-color: #ff9800; 
+  background-color: #00eaff; 
   display: flex;
   height: 250px;
   margin-bottom: 10px; 
@@ -176,6 +165,19 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #313131;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 20px;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
 }
 
 /* Non-grid specific CSS */  

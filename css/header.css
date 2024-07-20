@@ -1,0 +1,44 @@
+/* Header Styles */
+header {
+    align-items: center;
+    color: #313131;
+    background-color: #ff990000; 
+    display: flex;
+    height: 250px;
+    margin-bottom: 10px; 
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    pointer-events: none;
+  }
+  
+  .header-content h2 {
+    font-size: 3em;
+    margin: 0;
+    pointer-events: none;
+  }
+  
+  .header-content p {
+    font-size: 1.5em;
+    pointer-events: none;
+  }
+  
+  .header-content a { 
+    font-size: 1.5em;
+    pointer-events: auto;
+  }

@@ -1,0 +1,71 @@
+/* Custom CSS for my GitHub Page */
+
+
+/* Main Content Styles */
+main {
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgb(0, 0, 0); 
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+main h2 {
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section specific styles */
+
+
+/* Section 1 */
+.section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  color: #313131;
+  background-color: #ff990000; 
+  display: flex;
+  margin-bottom: 10px; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  z-index: 10
+  ;
+}
+#section1 {
+  background-color: #ff7f5f00;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+#section1 h1 {
+  font-family: 'Roboto', sans-serif; /* Example font family */
+  font-size: 3em; /* Example font size */
+  margin: 0;
+  color: #333; /* Example text color */
+}
+#section1 p {
+  font-family: 'Open Sans', sans-serif; /* Example font family */
+  font-size: 1.5em; /* Example font size */
+  color: #666; /* Example text color */
+}
+
+/* Section 2 */
+#section2 {
+  background-color: #feb47b;
+}
+
+/* Section 3 */
+#section3 {
+  background-color: #ffb3ba;
+}
+html {
+  scroll-behavior: smooth;
+}
