@@ -12,17 +12,8 @@ a {
   z-index: 10;
 }
 
-/* Non-grid specific CSS */  
+/* Non-grid specific CSS that go with the masonry-style grids*/  
 
-body {
-  margin: 10px;
-  color: #000000;
-  background-color: #ffffff;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.15em;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
 
 .item {
   background-color: #ffffff;
@@ -48,12 +39,12 @@ body {
 
 .project .title{
   font-size: 1em;
-  background-color: #607D8B;
+  background-color: #00A4EF;
   z-index: 10;
 }
 
 .blog .title{
-  background-color: #ff9800;
+  background-color: #F25022;
   font-size: 1em;
   color: #ffffff;
   text-transform: uppercase;
@@ -62,7 +53,8 @@ body {
 
 .photo .title{
   font-size: 1em;
-  background-color: #f44336;
+  background-color: #737373
+  ;
   z-index: 10;
 }
 

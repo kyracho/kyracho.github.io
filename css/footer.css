@@ -1,14 +1,14 @@
 /* Footer Styles */
 footer {
     align-items: center;
-    background-color: #313131; 
+    background-color: #31313100; 
     color: #ffffff; 
     display: flex;
-    
+    bottom: 0;
     justify-content: center;
     margin-top: 10px; 
     text-align: center;
-    position: relative;
+    position: absolute;
     z-index: 10;
   }
 
