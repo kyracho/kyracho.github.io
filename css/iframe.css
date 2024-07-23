@@ -1,6 +1,0 @@
-iframe {
-    width: 100vh;
-    height: 70vh;
-    border: 0; /* Removes default border */
-    z-index: 10;
-}
