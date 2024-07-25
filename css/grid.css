@@ -12,9 +12,7 @@ a {
   z-index: 10;
 }
 
-
 /* Non-grid specific CSS that go with the masonry-style grids*/  
-
 .item {
   background-color: #ffffff;
 }
@@ -51,16 +49,6 @@ a {
   background-color: #007bb5; 
 }
 
-.blog .title {
-  background-color: #00b7e5;
-  font-size: 1em;
-  color: #ffffff;
-  transition: background-color 0.3s ease; 
-}
-
-.blog .title:hover {
-  background-color: #007bb5; 
-}
 
 .desc img{
   width: 50%;
@@ -68,10 +56,13 @@ a {
   float: left;
 }
 
-
 .desc {
   margin-bottom: 10px;
   padding: 10px 10px 5px 10px;
+}
+
+.desc:hover{
+  background-color: #cac9c9
 }
 
 .desc p{
