@@ -9,14 +9,20 @@
 a {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit text color */
+  z-index: 10;
 }
 
-/* Non-grid specific CSS that go with the masonry-style grids*/  
 
+/* Non-grid specific CSS that go with the masonry-style grids*/  
 
 .item {
   background-color: #ffffff;
 }
+
+/* .item:hover {
+  background-color: #d2d2d2c9; 
+  transition: background-color 0.3s ease; 
+} */
 
 .photothumb{
   width: 100%;
@@ -26,23 +32,34 @@ a {
   padding: 1px;
  }
 
+
 .title h3{
   font-size: 1.2em;
   color: #ffffff;
   z-index: 10;
 }
 
-.project .title{
+
+.project .title {
   font-size: 1em;
   background-color: #00b7e5;
-  padding:1px;
-
+  padding: 1px;
+  transition: background-color 0.3s ease; 
 }
 
-.blog .title{
+.project .title:hover {
+  background-color: #007bb5; 
+}
+
+.blog .title {
   background-color: #00b7e5;
   font-size: 1em;
   color: #ffffff;
+  transition: background-color 0.3s ease; 
+}
+
+.blog .title:hover {
+  background-color: #007bb5; 
 }
 
 .desc img{
@@ -50,6 +67,7 @@ a {
   margin: 0 10px 10px 0;
   float: left;
 }
+
 
 .desc {
   margin-bottom: 10px;
