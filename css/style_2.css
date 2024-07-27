@@ -122,7 +122,6 @@ body {
 
 /* Section 4 */
 #section4 {
-
   top: 0;
   background-color: #ffb3bb00;
   margin-bottom: 10px;
@@ -147,6 +146,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+
+/* Section 6 */
+#section6 {
+  top: 0;
+  background-color: #ffb3bb00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 html {

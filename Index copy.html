@@ -16,10 +16,13 @@
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/box.css"/>
+    <link rel="stylesheet" href="css/filled_square.css"/>
+    <link rel="stylesheet" href="css/3dbuttons.css"/>
 
     
     <!--Load the imagesLoaded library for the resizing function-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+
     <script>
       window.onload = function() {
       // Resize the masonry-style grid items
@@ -47,7 +50,10 @@
           imagesLoaded(allItems[x], resizeInstance);
       }
       };
+
+      
     </script>
+
 
   </head>
   <body>
@@ -55,6 +61,7 @@
       <!-- ##### section 1 : name, social links ##### -->
       <section id="section1" class="section">
         <h1>Kyra Cho</h1>
+        <div class="spacer"></div>
         <h2>M.S., Applied Math, B.S., Math</h2>
         <p>Columbia University, NY</p>
         <!-- social media links-->
@@ -79,22 +86,46 @@
         <a class="button" href="#section2" style="float: left;">See more about Kyra</a>
       </section>
 
-      <!-- ##### section 2 : about ##### -->
-      <section id="section2" class="section">
+
+       <!-- ##### section 2 : about 1/2 ##### -->
+       <section id="section2" class="section">
         <div class="box">
           <img src="assets/columbia.jpeg">
           <div class="spacer"></div>
           <div class="spacer"></div>
-          <h2>Kyra is a double graduate of Columbia University in New York, holding both a Bachelor of Arts and a Master of Science. She has a strong enthusiasm for mathematics and new technology. She knows Python, CSS4, HTML5, and JavaScript.</h2>
-          <!--<h2>data visualization, statistical analysis, and predictive modeling. Proficient in SQL, Python, and R, I leverage advanced tools like Tableau, Power BI, and Excel for impactful insights. My skill set also includes machine learning, data cleaning, and effective communication of complex data narratives.</h2>-->
-          <!-- view work button -->
+          <h2>Kyra is a double graduate of Columbia University in New York, holding both a 
+            Bachelor of Arts and a Master of Science. She has a strong enthusiasm for mathematics and new 
+            technology. She knows Python, CSS4, HTML5, and JavaScript.</h2>
         </div>
+        <!-- view work button -->
         <div class="spacer"></div>
-        <a class="button" href="#section3" style="float: center;">View Kyra's work</a>
+        <a class="button" href="#section3" style="float: center;">See more about Kyra</a>
       </section>
 
-      <!-- ##### section 3 : my work ##### -->
-      <section id="section3" class="section">
+         <!-- ##### section 3 : about 2/2 ##### -->
+         <section id="section3" class="section">
+          <div class="box">
+            <!-- <h2> The following interactive visualization embodies how, in a self-motivated way, 
+              we navigate the world, engaging with others and sharing our thoughts, ideas,
+                and occasionally, a part of our ideals. Each click creates nodes that populate the animation.</h2>
+            <div class="spacer"></div>
+            <div class="spacer"></div> -->
+            <!-- tsparticle animation-->
+            <div id="tsparticles2" ></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <h2>Kyra has a natural inclination towards geometric and numerical thinking. 
+              She takes great pride in her writing skills and believes that life is about continuously 
+              learning new and unfamiliar skills, as well as refining the ones she already possesses. 
+              For Kyra, attention to detail is paramount.</h2>
+          </div>
+          <!-- view work button -->
+          <div class="spacer"></div>
+          <a class="button" href="#section4" style="float: center;">View Kyra's work</a>
+        </section>
+  
+      <!-- ##### section 4 : my work ##### -->
+      <section id="section4" class="section">
         <div class="box">
           <h2>Examples of Kyra's Work</h2>
 
@@ -109,7 +140,10 @@
                   </div>
                   <img class="photothumb" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzFjZnRzZ2pkdW4xZXY3dnpwY3BneWs5cWVscDJtNHhzOHFwaHN5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8qrrHSsrK9xpknGVNF/giphy.webp">
                   <div class="desc">
-                    <p>In this Keynote presentation, I speak about how machine learning can be used to identify unknown partial differential equation operators from solution data. The primary method employed is a data-driven approach that combines local regression with global consistency. It is a bit cursory, so strap in.</p>
+                    <p>In this Keynote presentation, I speak about how machine learning can be used 
+                      to identify unknown partial differential equation operators from solution data. 
+                      The primary method employed is a data-driven approach that combines local regression 
+                      with global consistency. It is a bit cursory, so strap in.</p>
                   </div>
                 </a>
               </div>
@@ -123,7 +157,9 @@
                   </div>
                   <img class="photothumb" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWdnaG43NTdlZ203cWNicDR3NDE1MWFvcGl6OXpnam1hbHpldWJheCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QpVUMRUJGokfqXyfa1/giphy.webp">
                   <div class="desc">  
-                    <p> In this Jupyter notebook write-up, I compare the Chebyshev spectral method and a more basic method for solving the Poisson equation. It includes a convergence analysis and a comparison of solutions.</p>
+                    <p> In this Jupyter notebook write-up, I compare the Chebyshev spectral method 
+                      and a more basic method for solving the Poisson equation. It includes a convergence 
+                      analysis and a comparison of solutions.</p>
                   </div>
                 </a>
               </div>
@@ -132,24 +168,64 @@
         </div>
         <!-- See more button -->
         <div class="spacer"></div>
-        <a class="button" href="#section4" style="float: center;">view kyra's location</a>
+        <a class="button" href="#section5" style="float: center;">See data analyst projects</a>
       </section>
 
-      <!-- ##### section 4 : Google Maps##### -->
-      <section id="section4" class="section">
+      <!-- ##### section 5 : Data analyst work gallary ##### -->
+      <section id="section5" class="section">
+        <div class="box">
+          <h2>Kyra's Data Analyst Projects</h2>
+          <div class="filled-square"></div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span> - Tableu</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span> - Power BI</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <span> - ggplot2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span> - Excel</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- View location button -->
+        <div class="spacer"></div>
+        <a class="button" href="#section6" style="float: center;">View Kyra's Location</a>
+      </section>
+
+      <!-- ##### section 6 : Google Maps ##### -->
+      <section id="section6" class="section">
         <div class="box">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1665.28683343176!2d-73.96355975610521!3d40.807535471384206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63e96d30dc9%3A0x577933f947e52750!2sColumbia%20University!5e1!3m2!1sen!2sus!4v1721919410999!5m2!1sen!2sus" width="1000" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!-- back to top button -->
+        <div class="spacer"></div>
+        <div class="spacer"></div>
         <a class="button" href="#section1" style="float: center;">Return to the beginning</a>
         <footer>
           <p>&copy; Kyra cho</p>
         </footer>
       </section>
     
-      <!-- Javascript for the background animation -->
+      <!-- Javascript for tsParticles -->
       <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js" integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="js/particles.js"></script>
+      <script type="text/javascript" src="js/particles2.js"></script>
       <div id="tsparticles"></div>
 
     </main>
