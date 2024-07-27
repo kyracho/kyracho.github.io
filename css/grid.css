@@ -15,12 +15,14 @@ a {
 /* Non-grid specific CSS that go with the masonry-style grids*/  
 .item {
   background-color: #ffffff;
+  z-index: 9;
+  color: #666
 }
 
-/* .item:hover {
+.item:hover {
   background-color: #d2d2d2c9; 
   transition: background-color 0.3s ease; 
-} */
+}
 
 .photothumb{
   width: 100%;
@@ -28,26 +30,28 @@ a {
 
 .title {
   padding: 1px;
+
  }
 
 
 .title h3{
   font-size: 1.2em;
-  color: #ffffff;
+  color: #333;
   z-index: 10;
 }
 
-
+/* 
 .project .title {
   font-size: 1em;
   background-color: #00b7e5;
   padding: 1px;
   transition: background-color 0.3s ease; 
-}
+  z-index: 10;
+} 
 
 .project .title:hover {
   background-color: #007bb5; 
-}
+} */
 
 
 .desc img{
