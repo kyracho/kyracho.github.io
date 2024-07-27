@@ -1,6 +1,7 @@
 
 .filled-square {
-    width: 73vw;
+    width: 77vw;
     height: 35vh;
     background-color: #dcdcdc;
+    position: center;
 }
