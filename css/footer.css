@@ -8,11 +8,11 @@ footer {
     justify-content: center;
     margin-top: 10px; 
     text-align: relative;
-    position: absolute;
+    position: relative;
     z-index: 10;
   }
 
-  .footer {
+  /* .footer {
     background-image: url('assets/footer-background.jpg'); 
     background-size: cover; 
     background-position: center; 
@@ -21,13 +21,13 @@ footer {
     padding: 20px; 
     text-align: center; 
     z-index: 10;
-  }
+  } */
   
-  .footer-content {
+  /* .footer-content {
     max-width: 1200px; 
     margin: 0 auto;
     z-index: 10;
-  }
+  } */
   
   .footer p {
     color: #ffffff;

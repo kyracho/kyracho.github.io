@@ -13,6 +13,8 @@ main {
   width: 100%;
   padding: 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 main h2 {
