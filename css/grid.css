@@ -16,13 +16,22 @@ a {
 .item {
   background-color: #ffffff;
   z-index: 9;
-  color: #666
 }
 
 .item:hover {
-  background-color: #d2d2d2c9; 
+  background-color: #7b7b7bc9; 
   transition: background-color 0.3s ease; 
 }
+
+.item:hover .title {
+  background-color: #7b7b7bc9;
+  transition: background-color 0.3s ease; 
+}
+
+.item:hover .photothumb {
+  filter: brightness(50%);
+}
+
 
 .photothumb{
   width: 100%;
@@ -30,29 +39,17 @@ a {
 
 .title {
   padding: 1px;
-
+  background-color:  #00b7e5;
+  color: #ffffff;
  }
+
 
 
 .title h3{
   font-size: 1.2em;
-  color: #333;
+  color: #ffffff;
   z-index: 10;
 }
-
-/* 
-.project .title {
-  font-size: 1em;
-  background-color: #00b7e5;
-  padding: 1px;
-  transition: background-color 0.3s ease; 
-  z-index: 10;
-} 
-
-.project .title:hover {
-  background-color: #007bb5; 
-} */
-
 
 .desc img{
   width: 50%;
@@ -68,4 +65,5 @@ a {
 
 .desc p{
   margin-bottom: 10px;
+  color: #000000;
 }
