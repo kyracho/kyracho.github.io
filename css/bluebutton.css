@@ -16,8 +16,8 @@ a.button {
     margin: 2px 10px 2px 0;
     display: inline-block;
     margin-top: 10px;
-
 }
+
 a.button:hover {
     opacity: 0.8;
 }
