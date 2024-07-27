@@ -20,21 +20,23 @@ body {
   ul li {
     list-style:none;
     margin:0 5px;
+    font-size: 1.5vw;
+    line-height:3vw;
   }
   
   ul li a .fa {
-    font-size: 40px;
+    font-size: 10vw;
     color: #262626;
-    line-height:80px;
+    line-height:10vw;
     transition: .5s;
-    padding-right: 25px;
+    padding-right: -1vw;
   }
   
   ul li a span {
     padding:0;
     margin:0;
     position:absolute;
-    top: 30px;
+    top: 1vw;
     color: #262626;
     letter-spacing: 4px;
     transition: .5s;
@@ -44,8 +46,8 @@ body {
     text-decoration: none;
     display:absolute;
     display:block;
-    width:210px;
-    height:80px;
+    width:15vw;
+    height:5vw;
     background: #fff;
     text-align:left;
     padding-left: 20px;
