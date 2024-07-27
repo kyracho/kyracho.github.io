@@ -21,15 +21,16 @@ body {
     list-style:none;
     margin:0 5px;
     font-size: 1.5vw;
-    line-height:3vw;
+    line-height:1vw;
   }
   
   ul li a .fa {
     font-size: 10vw;
     color: #262626;
-    line-height:10vw;
+    /* line-height:5vw; */
     transition: .5s;
-    padding-right: -1vw;
+    padding-right: 0vw;
+    
   }
   
   ul li a span {
@@ -40,6 +41,9 @@ body {
     color: #262626;
     letter-spacing: 4px;
     transition: .5s;
+
+ 
+    
   }
   
   ul li a {
