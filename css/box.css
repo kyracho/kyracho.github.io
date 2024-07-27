@@ -6,7 +6,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
-    padding: 30px;
+    padding: 1.5vw;
     position: relative;
     max-width: 90%;
     max-height: 90%;
@@ -15,7 +15,7 @@
   .box h2 {
     margin: 0 0 30px 0;
     padding: 0;
-    font-size: 23px ;
+    font-size: 25px ;
     font: 'Open Sans';
     color: #fff;
     text-align: center;
