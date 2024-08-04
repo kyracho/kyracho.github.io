@@ -19,13 +19,17 @@ a {
 }
 
 .item:hover {
-  background-color: #7b7b7bc9; 
-  transition: background-color 0.3s ease; 
+  background-color: #979797c9; 
+  /* transition: background-color 0.5s ease;  */
 }
 
 .item:hover .title {
   background-color: #7b7b7bc9;
-  transition: background-color 0.3s ease; 
+  /* transition: background-color 0.5s ease;  */
+}
+
+.photothumb {
+  /* transition: filter 0.5s ease; */
 }
 
 .item:hover .photothumb {
@@ -39,15 +43,15 @@ a {
 
 .title {
   padding: 1px;
-  background-color:  #00b7e5;
-  color: #ffffff;
+  background-color:  #7de0f9;
+  color: #797878;
  }
 
 
 
 .title h3{
   font-size: 1.2em;
-  color: #ffffff;
+  color: #000000;
   z-index: 10;
 }
 
