@@ -1,0 +1,172 @@
+/* Custom CSS for my GitHub Page */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Content Styles */
+main {
+  background-color: #ffffff; 
+  border-radius: 0px; 
+  box-shadow: 0 4px 8px rgb(0, 0, 0); 
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  color: #2c2c2c;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+
+body {
+  margin: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  
+}
+.spacer {
+  height: 10px; /* Adds vertical space */
+  }
+
+/* Section specific styles */
+
+
+/* Section 1 */
+.section {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  color: #313131;
+  background-color: #ff990000; 
+  display: flex;
+  margin-bottom: 10px; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  z-index: 10
+  ;
+}
+#section1 {
+  background-color: #ff7f5f00;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+#section1 h1 {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 5em; 
+  margin: 0;
+  color: #333;
+}
+
+#section1 h2 {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.5em; 
+  margin: 0;
+  color: #555; 
+}
+#section1 p {
+  font-family: 'Open Sans', sans-serif; /* Example font family */
+  font-size: 1.3em; /* Example font size */
+  color: #555; /* Example text color */
+}
+
+/* Section 2 */
+#section2 {
+  background-color: #fafafa00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section 3 */
+#section3 {
+
+  top: 0;
+  background-color: #ffb3bb00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section3 h2 {
+  font-family: 'Open Sans', sans-serif; /* Example font family */
+  font-size: 1.3em; /* Example font size */
+  color: #ffffff; /* Example text color */
+  margin: 0px;
+}
+
+#section3 p {
+  font-family: 'Open Sans', sans-serif; /* Example font family */
+  font-size: 1.2em; /* Example font size */
+  color: #ffffff; /* Example text color */
+  margin: 0px;
+}
+
+/* Section 4 */
+#section4 {
+  top: 0;
+  background-color: #ffb3bb00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Section 5 */
+#section5 {
+  top: 0;
+  background-color: #ffb3bb00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Section 6 */
+#section6 {
+  top: 0;
+  background-color: #ffb3bb00;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
