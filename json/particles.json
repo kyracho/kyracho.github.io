@@ -239,6 +239,7 @@
           "enable": false,
           "inverse": false,
           "maxSpeed": 50
+
         },
         "path": {
           "clamp": true,
@@ -257,7 +258,7 @@
         },
         "random": false,
         "size": false,
-        "speed": 10,
+        "speed": 5, 
         "spin": {
           "acceleration": 0,
           "enable": false
