@@ -1,0 +1,4 @@
+*.html linguist-vendored
+snake.html* linguist-vendored
+version 1.html* linguist-vendored
+Index copy.html* linguist-vendored
