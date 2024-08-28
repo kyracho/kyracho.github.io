@@ -1,8 +1,5 @@
-/snake.html linguist-vendored
-/version\ 1.html linguist-vendored
-/Index\ copy.html linguist-vendored
+*.html linguist-vendored
 
-/index.html linguist-language=HTML
 /json/particles.json linguist-language=JSON
 /json/particles2.json linguist-language=JSON
 
