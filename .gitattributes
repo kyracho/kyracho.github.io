@@ -1,12 +1,12 @@
-/snake.html* linguist-vendored
-/version\ 1.html* linguist-vendored
-/Index\ copy.html* linguist-vendored
+/snake.html linguist-vendored
+/version\ 1.html linguist-vendored
+/Index\ copy.html linguist-vendored
 
-/index.html linguist-language=html
-/json/particles.json linguist-language=json
-/json/particles2.json linguist-language=json
+/index.html linguist-language=HTML
+/json/particles.json linguist-language=JSON
+/json/particles2.json linguist-language=JSON
 
 /js/particles.js linguist-language=JavaScript
 /js/particles2.js linguist-language=JavaScript
 
-/_config.yml linguist-language=yml
+/_config.yml linguist-language=YAML
