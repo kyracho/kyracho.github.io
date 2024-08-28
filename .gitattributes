@@ -1,9 +1,1 @@
-*.html linguist-vendored
-
-/json/particles.json linguist-language=JSON
-/json/particles2.json linguist-language=JSON
-
-/js/particles.js linguist-language=JavaScript
-/js/particles2.js linguist-language=JavaScript
-
-/_config.yml linguist-language=YAML
+* linguist-vendored
