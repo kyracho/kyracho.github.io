@@ -69,19 +69,19 @@ body {
   font-family: 'Roboto', sans-serif; 
   font-size: 5em; 
   margin: 0;
-  color: #333;
+  color: #f4f4f4;
 }
 
 #section1 h2 {
   font-family: 'Roboto', sans-serif; 
   font-size: 1.5em; 
   margin: 0;
-  color: #555; 
+  color: #929090; 
 }
 #section1 p {
   font-family: 'Open Sans', sans-serif; /* Example font family */
   font-size: 1.3em; /* Example font size */
-  color: #555; /* Example text color */
+  color: #929090; /* Example text color */
 }
 
 /* Section 2 */

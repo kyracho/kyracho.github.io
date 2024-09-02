@@ -5,7 +5,7 @@
   .box {
     background-color: #1c1c1e;
     border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0px 25px rgba(255, 255, 255, 0.8);
     padding: 1.5vw;
     position: relative;
     max-width: 90%;
