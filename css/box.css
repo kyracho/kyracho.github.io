@@ -3,13 +3,13 @@
   }
   
   .box {
-    background-color: rgb(36, 36, 36);
+    background-color: #1c1c1e;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
     padding: 1.5vw;
     position: relative;
     max-width: 90%;
-    max-height: 90%;
+    /* max-height: 100%; */
   }
   
   .box h2 {
