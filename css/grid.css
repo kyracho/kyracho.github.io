@@ -53,6 +53,7 @@ a {
   font-size: 1em;
   color: #000000;
   z-index: 10;
+  
 }
 
 .desc img{
@@ -70,5 +71,6 @@ a {
 .desc p{
   font-size: .8em;
   margin-bottom: 10px;
+  text-align: justify;
   color: #000000;
 }
