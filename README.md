@@ -1,4 +1,4 @@
-# My GitHub Pages Site
+# My Personal Portfolio Website
 
 Welcome! This repository contains the source files for my personal website.
 
@@ -10,7 +10,7 @@ It consists of:
 5. Miscellaneous Projects
 6. My Location
 
-Here is a snapshot of the page:
+Here is a snapshot of my website:
 
 <img width="1520" alt="Screenshot 2024-09-16 at 2 38 20 PM" src="https://github.com/user-attachments/assets/84ae4094-b0a6-4fcd-a393-920287191756">
 <img width="1530" alt="Screenshot 2024-09-16 at 2 38 41 PM" src="https://github.com/user-attachments/assets/529cd466-b57f-4ca4-8697-25a194cca2c8">
