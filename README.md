@@ -11,7 +11,6 @@ It consists of:
 6. Projects
   - I made the tiles link to my recent projects
   - I wrote javascript to dynamically organize and resize the masonry style tiles depending on the device and the current window size.
-  - 
 7. Miscellaneous Projects
   - 3 dimensional, dynamic, buttons that will be linked to my future miscellaneous projects.
 8. My Location
