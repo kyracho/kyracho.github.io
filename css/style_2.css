@@ -165,7 +165,10 @@ body {
   align-items: center;
 }
 
-/* Scroll bar style*/
+/* Scroll bar style*/ 
+html {
+  scroll-behavior: smooth;
+}
 
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
