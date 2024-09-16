@@ -14,12 +14,12 @@ a {
 
 /* Non-grid specific CSS that go with the masonry-style grids*/  
 .item {
-  background-color: #ffffff;
+  background-color: #403f3f;
   z-index: 9;
 }
 
 .item:hover {
-  background-color: #979797c9; 
+  background-color: #8e8e8ec9; 
   /* transition: background-color 0.5s ease;  */
 }
 
@@ -43,7 +43,7 @@ a {
 
 .title {
   padding: 1px;
-  background-color:  #7de0f9;
+  background-color:  #616363;
   color: #797878;
  }
 
@@ -51,7 +51,7 @@ a {
 
 .title h3{
   font-size: 1em;
-  color: #000000;
+  color: #bfbfbf;
   z-index: 10;
   
 }
@@ -72,5 +72,5 @@ a {
   font-size: .8em;
   margin-bottom: 10px;
   text-align: justify;
-  color: #000000;
+  color: #d4d4d4;
 }
