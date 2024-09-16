@@ -2,6 +2,8 @@
 
 Welcome! This repository contains the source files for my personal website.
 
+Here is a snapshot of the page:
+
 <img width="1520" alt="Screenshot 2024-09-16 at 2 38 20 PM" src="https://github.com/user-attachments/assets/84ae4094-b0a6-4fcd-a393-920287191756">
 <img width="1530" alt="Screenshot 2024-09-16 at 2 38 41 PM" src="https://github.com/user-attachments/assets/529cd466-b57f-4ca4-8697-25a194cca2c8">
 <img width="1528" alt="Screenshot 2024-09-16 at 2 38 48 PM" src="https://github.com/user-attachments/assets/c14a30cb-5fec-4842-b6c7-8976c48da906">
