@@ -5,14 +5,9 @@ Welcome! This repository contains the source files for my personal website.
 It consists of:
 1. Cover Page with an animated background
 3. About Me
-4. Customized Virtual Interview Chatbot
-  - Hosted by myself on AWS using the MERN stack
-  - I built the frontend of the chatbot to work seamlessly, similarly to the iMessage app. 
-6. Projects
-  - I made the tiles link to my recent projects
-  - I wrote javascript to dynamically organize and resize the masonry style tiles depending on the device and the current window size.
-7. Miscellaneous Projects
-  - 3 dimensional, dynamic buttons that will link to my future miscellaneous projects.
+4. Customized Virtual Interview Chatbot. Hosted by myself on AWS using the MERN stack. I built the frontend of the chatbot to work seamlessly, similarly to the iMessage app. 
+6. Projects, I wrote javascript to dynamically organize and resize the masonry style tiles depending on the device and the current window size. The tiles link to my recent projects.
+7. Dynamic buttons that will link to my future miscellaneous projects.
 8. My Location
 
 Here is the current snapshot of my website:
