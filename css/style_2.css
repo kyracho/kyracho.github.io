@@ -52,7 +52,7 @@ body {
   margin-bottom: 10px; 
   position: relative;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   z-index: 10
   ;
 }
@@ -67,20 +67,20 @@ body {
 }
 #section1 h1 {
   font-family: 'Roboto', sans-serif; 
-  font-size: 5em; 
+  font-size: 4em; 
   margin: 0;
   color: #f4f4f4;
 }
 
 #section1 h2 {
   font-family: 'Roboto', sans-serif; 
-  font-size: 1.5em; 
+  font-size: 1.2em; 
   margin: 0;
   color: #929090; 
 }
 #section1 p {
   font-family: 'Open Sans', sans-serif; /* Example font family */
-  font-size: 1.3em; /* Example font size */
+  font-size: 1.1em; /* Example font size */
   color: #929090; /* Example text color */
 }
 
@@ -110,19 +110,6 @@ body {
   align-items: center;
 }
 
-#section3 h2 {
-  font-family: 'Open Sans', sans-serif; /* Example font family */
-  font-size: 1.3em; /* Example font size */
-  color: #ffffff; /* Example text color */
-  margin: 0px;
-}
-
-#section3 p {
-  font-family: 'Open Sans', sans-serif; /* Example font family */
-  font-size: 1.2em; /* Example font size */
-  color: #ffffff; /* Example text color */
-  margin: 0px;
-}
 
 /* Section 4 */
 #section4 {

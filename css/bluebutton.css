@@ -1,21 +1,19 @@
-
 a.button {
     font-family: sans-serif;
     background: #03a9f4;
-    font-size: 11px;
+    font-size: 10px; 
     border: none;
-    border-radius: 5px;
+    border-radius: 3px; /* Smaller rounded corners */
     color: #fff;
     cursor: pointer;
     font-weight: 600;
-    padding: 10px 20px;
-    letter-spacing: 2px;
+    padding: 8px 10px;
+    letter-spacing: 1px; /* Slightly tighter letter spacing */
     outline: none;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 2px 10px 2px 0;
-    display: block;
-    margin-top: 0px;
+    margin: 1px 4px; /* Adjusted margins */
+    display: inline-block;
     position: relative;
     z-index: 10;
 }
@@ -23,4 +21,3 @@ a.button {
 a.button:hover {
     opacity: 0.8;
 }
-  

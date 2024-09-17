@@ -32,6 +32,7 @@ footer {
   .footer p {
     color: #ffffff;
     z-index: 10;
+    font-size: 8px;
 
   }
   

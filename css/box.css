@@ -18,11 +18,23 @@
     margin-top: 0px ;
     margin-bottom: 15px ;
     padding: 0;
-    font-size: 17px ;
+    font-size: 16px ;
     font: 'Open Sans';
-    color: rgb(179, 179, 179);
+    color: rgb(151, 151, 151);
     text-align: justify;
   }
+
+  .box p {
+    margin: 0px;
+    margin-top: 5px ;
+    margin-bottom: 0px ;
+    padding: 0;
+    font-size: 16px ;
+    font: 'Open Sans';
+    color: rgb(164, 164, 164);
+    text-align: justify;
+  }
+  
   
   .box .inputBox label {
     color: #fff;
@@ -33,7 +45,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    font-size: 18px;
+    font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 30px;
     outline: none;
