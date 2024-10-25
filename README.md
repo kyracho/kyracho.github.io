@@ -1,8 +1,4 @@
-# My Personal Portfolio Website
-
 Hello, welcome. This repository contains the source files for my personal website.
-
-Snapshot:
 <img width="1448" alt="Screenshot 2024-10-25 at 11 37 19 AM" src="https://github.com/user-attachments/assets/264f5138-ad29-4d6f-b8cf-360c14da295e">
 <img width="1451" alt="Screenshot 2024-10-25 at 11 37 09 AM" src="https://github.com/user-attachments/assets/96f2937f-40c7-412a-9789-185d155f561b">
 <img width="1448" alt="Screenshot 2024-10-25 at 11 37 40 AM" src="https://github.com/user-attachments/assets/32e0311a-1119-4eed-b354-3da91eccc92f">
