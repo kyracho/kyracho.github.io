@@ -4,16 +4,13 @@
     <title>Kyra Cho : Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This Kyra Cho's personal webpage.">
+    <meta name="description" content="This Kyra Cho's portfolio.">
     <meta name="author" content="Kyra Cho">
     <link rel="icon" href="assets/favicon.ico" >
     <link rel="stylesheet" href="css/particles.css" />
-    <link rel="stylesheet" href="css/style_2.css"/>
-    <link rel="stylesheet" href="css/img.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/box.css"/>
-    <link rel="stylesheet" href="css/filled_square.css"/>
-    <link rel="stylesheet" href="css/3dbuttons.css"/>
     <link rel="stylesheet" href="css/bluebutton.css"/>
     <link rel="stylesheet" href="css/grid.css"/>
     
@@ -23,7 +20,6 @@
     <script>
       // window.onload = function() {
       document.addEventListener("DOMContentLoaded", function() {
-      // Resize the masonry-style grid items
       function resizeGridItem(item) {
           var grid = document.getElementsByClassName("grid")[0];
           var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
@@ -54,13 +50,13 @@
   </head>
   <body>
     <main>
-      <!-- ##### section 1 : name, social links ##### -->
-      <section id="section1" class="section">
+
+      <!-- name and socials -->
+      <section class="section">
         <h1>Kyra Cho</h1>
         <div class="spacer"></div>
         <h2>M.S., Applied Math, B.A., Biology</h2>
         <p>Columbia University, NY</p>
-        <!-- social media links-->
         <div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;">
           <a href="https://github.com/kyracho" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:62px;height:62px;padding:0;margin:3px;color:#ffffff;"><svg class="niftybutton-github" style="display:block;fill:currentColor" data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>Github</title>
             <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path></svg>
@@ -77,45 +73,17 @@
               <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path></svg>
           </a>
         </div>
-        <!-- See more button -->
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <a class="button" href="#section2" style="float: left;">View more about me</a>
         <div id="weather"></div>
-        
 
       </section>
 
-      <!-- ##### section 3 : about 2/2 ##### -->
-      <section id="section3" class="section">
-        <h2 style="margin-bottom: 10px; font-size: 30px; color: #ffffff;">Chat  with my Assistant</h2>
-        <div class="box" style="background-color: #ffffff;">
-            <!-- <h2 style= "font-size: 20px; margin-bottom:0px; color:#000000;">Chat with my Assistant</h2> -->
-            <!-- <p style= "margin-bottom:10px; max-width:65vw; min-width: 340px;color: #000000;">Dear employers, as you have been automating the process of finding employees, 
-            I have been automating the process of applying. Please engage with my AI assistant below to ask about my skills and qualifications.</p> -->
-            <iframe src="https://kyrachatbot.com" 
-              frameborder="0px" 
-              scrolling="no"
-              style="
-              width: 90vw;
-              max-width: 700px;
-              height: 402px; 
-              border: none;
-              display: block;">
-              
-            </iframe>
-        </div>
-        <!-- view work button -->
-        <div class="spacer"></div>
-        <a class="button" href="#section4" style="float: center;">View My projects</a>
+      <!-- digitpredictor -->
+      <section class="section">
+        <iframe style="width:100vw; height:100vh; border: none;" src="https://digit-predictor-6ba58c0cd85a.herokuapp.com">  </iframe>
       </section>
 
-      <section id="section3" class="section">
-      <iframe style="width:100vw; height:100vh; border: none;" src="https://digit-predictor-6ba58c0cd85a.herokuapp.com">  </iframe>
-      </section>
-
-      <!-- ##### section 3 : about 2/2 ##### -->
-      <section id="section3" class="section">
+      <!-- tictactoe -->
+      <section class="section">
         <h2 style="margin-bottom: 10px; font-size: 25px; color: #ffffff;">Tic Tac Toe by Kyra</h2>
           <iframe src="https://kyrachatbot.xyz/" style=
           "border:none; 
@@ -126,15 +94,29 @@
           height: 401px; 
           transform: translate(2px, 2px);
           box-shadow: 0 0px 20px #e9a4b7;" scrolling="no"></iframe>
-        <!-- view work button -->
-        <div class="spacer"></div>
-        <a class="button" href="#section4" style="float: center; background-color:#9b6bb3 ;">View My projects</a>
       </section>
 
-      <!-- ##### section 4 : my work ##### -->
-      <section id="section4" class="section">
+      <!-- chatbot -->
+      <section class="section">
+        <h2 style="margin-bottom: 10px; font-size: 30px; color: #ffffff;">Chat  with my Assistant</h2>
+        <div class="box" style="background-color: #ffffff;">
+            <iframe src="https://kyrachatbot.com" 
+              frameborder="0px" 
+              scrolling="no"
+              style="
+              width: 90vw;
+              max-width: 700px;
+              height: 402px; 
+              border: none;
+              display: block;">
+            </iframe>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="section">
+        <h2 style="margin-bottom: 10px; font-size: 30px; color: #ffffff;">My projects</h2>
         <div class="box" style="width: 80vw;">
-          <h2>Kyra's Projects</h2>
           <div class="grid">
 
             <div class="item">
@@ -256,93 +238,28 @@
               </div>
             </div>
 
-            <!-- <div class="item">
-              <div class="content">
-                <a href="https://github.com/kyracho/snakegame" target="_blank">
-                  <div class="title">
-                    <h3>Coding a Snake Game in C++</h3>   
-                  </div>
-                  <img class="photothumb" src="content/thumbnails/C++.png">
-                  <div class="desc">  
-                    <p>Snake Game Coded in C++ for MacOS Terminal!
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div> -->
-
           </div>
         </div>
-        <!-- See more button -->
-        <div class="spacer"></div>
-        <a class="button" href="#section6" style="float: center;">View my location</a>
-        
       </section>
 
-      
-      
 
-      <!-- ##### section 5 ##### -->
-     <!--  <section id="section5" class="section">
-        <div class="box">
-          <h2 style="max-width: 70vw">Kyra's Miscelaneous Projects (Under Construction)</h2>
-          <div class="filled-square"></div>
-          <ul>
-            <li>
-              <a href="http://www.example.com" target="_blank">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <span></span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.example.com" target="_blank">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <span></span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.example.com" target="_blank">
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                <span></span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.example.com" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <span></span>
-              </a>
-            </li>
-          </ul>
-        </div>-->
-        <!-- View location button -->
-        <!--<div class="spacer"></div>
-        <a class="button" href="#section6" style="float: center;">View Kyra's Location</a>
-      </section>-->
-
-      <!-- ##### section 6 : Google Maps ##### -->
-       <!-- ##### section 2 : about 1/2 ##### -->
-       <section id="section2" class="section">
+      <!-- about -->
+      <section class="section">
         <h2 style="margin-bottom: 10px; font-size: 30px; color: #ffffff;">About Me</h2>
         <div class="box" style="width:70vw;">
-          <img src="assets/columbia.png">
+          <img style="max-width: 100%; height: auto;" src="assets/columbia.png">
           <p>I am a dual graduate of Columbia University. I initially pursued pre-med, before transitioning to mathematics and coding for its creative, problem solving, and analytical aspects. She has a strong enthusiasm for mathematics and new 
             technology. I have worked with a comprehensive variety of languges and technologies. I am the happiest when I am creating apps and contributing to open source projects. </p>
-          </div>
+        </div>
+      </section>
 
-        <!-- back to top button -->
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <a class="button" href="#section1" style="float: center;">Return to the beginning</a>
-      </section>
-        <footer>
-          <p style="font-size: 14px";>&copy; Kyra Cho</p>
-        </footer>
-      </section>
+      <footer>
+        <p style="font-size: 14px";>&hearts; Kyra Cho</p>
+      </footer>
     
       <!-- Javascript for tsParticles -->
       <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js" integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script> -->
       <script type="text/javascript" src="js/particles.js"></script>
-      <!-- <script type="text/javascript" src="js/particles2.js"></script> -->
       <div id="tsparticles"></div> 
 
     </main>
