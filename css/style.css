@@ -11,9 +11,12 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden; 
+  scroll-snap-stop: always (Y Mandatory)
 }
 
 .section {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   min-height: 100vh;
   display: flex;
   align-items: center;
