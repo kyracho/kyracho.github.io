@@ -1,19 +1,16 @@
 * {
     box-sizing: border-box;
-  }
-  
-  .box {
+}
+
+.box {
     background-color: #1c1c1c;
     border-radius: 10px;
     box-shadow: 0 0px 25px rgba(255, 255, 255, 0.8);
     padding: 1.5vw;
     position: relative;
-    /* max-width: 90%; */
-    /* min-height: 410px; */
-    /* max-height: 100%; */
-  }
-  
-  .box h2 {
+}
+
+.box h2 {
     margin: 0px;
     margin-top: 0px ;
     margin-bottom: 15px ;
@@ -22,9 +19,9 @@
     font: 'Open Sans';
     color: #ffffff;
     text-align: justify;
-  }
+}
 
-  .box p {
+.box p {
     margin: 0px;
     margin-top: 5px ;
     margin-bottom: 0px ;
@@ -33,9 +30,9 @@
     font: 'Open Sans';
     color: #ffffff;
     text-align: justify;
-  }
-  
-  .box iframe {
+}
+
+.box iframe {
     padding: 1px;
     position: center;
     position: relative;
