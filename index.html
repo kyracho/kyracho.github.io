@@ -12,26 +12,7 @@
     <link rel="stylesheet" href="css/bluebutton.css"/>
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <!--Load the imagesLoaded library for the resizing function-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          const grid = document.querySelector(".grid");
-          const rowHeight = parseInt(getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-          const rowGap = parseInt(getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-          function resizeGridItem(item) {
-              const rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
-              item.style.gridRowEnd = "span " + rowSpan;
-          }
-          function resizeAllGridItems() {
-              document.querySelectorAll(".item").forEach(resizeGridItem);
-          }
-          resizeAllGridItems();
-          window.addEventListener("resize", resizeAllGridItems);
-          document.querySelectorAll(".item").forEach(item => imagesLoaded(item, () => resizeGridItem(item)));
-      });
-      </script>
-      <script src="js/weather.js"></script>
+    <script src="js/weather.js"></script>
   </head>
   <body>
     <div class="scroller">
