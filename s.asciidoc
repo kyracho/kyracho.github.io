@@ -29,6 +29,5 @@ curl -X POST "localhost:9200/_snapshot/my_repository/my_snapshot_2099.05.06/_res
 }
 '
 --------------------------------------------
-+
 <1> Exclude all indices and data streams from the restore operation to ensure that only the {kib} system indices included in the {kib} feature state will be restored.
 . Start all {kib} instances on the older version you want to rollback to.
