@@ -20,7 +20,7 @@ To roll back after a failed upgrade migration, you must also roll back the {kib}
 . To make sure no {kib} instances are performing an upgrade migration, shut down all {kib} instances.
 . {ref}/snapshots-restore-snapshot.html[Restore] the `kibana` feature state from a snapshot taken before the failed {kib} upgrade. The following {es} request will only restore the {kib} feature state 
 +
-[source,bash]
+[source,sh]
 --------------------------------------------
 curl -X POST "localhost:9200/_snapshot/my_repository/my_snapshot_2099.05.06/_restore" -H "Content-Type: application/json" -d'
 {
