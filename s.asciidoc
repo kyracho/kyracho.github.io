@@ -24,7 +24,7 @@ To roll back after a failed upgrade migration, you must also roll back the {kib}
 --------------------------------------------
 curl -X POST "localhost:9200/_snapshot/my_repository/my_snapshot_2099.05.06/_restore" -H "Content-Type: application/json" -d'
 {
-  "indices": "-*",
+  "indices": "-*", <1>
   "feature_states": ["kibana"]
 }
 '
