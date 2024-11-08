@@ -234,4 +234,21 @@
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js" integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="js/particles.js"></script>
   <div id="tsparticles"></div> 
+
+  <audio id="welcomeAudio" src="assets/rickroll.m4a"></audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById('welcomeAudio');
+        const shouldPlay = Math.random() > 0.5;
+        if (shouldPlay) {
+            audio.play().catch(error => {
+                console.log("Autoplay blocked. Waiting for user interaction.");
+                document.addEventListener("click", () => {
+                    audio.play();
+                }, { once: true });
+            });
+        }
+    });
+  </script>
+
 </html>
