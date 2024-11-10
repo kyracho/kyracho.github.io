@@ -1,3 +1,14 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "errorLens.warningForeground": "#ff0000",
+    "errorLens.warningBackground": "#ff000020",
+    "errorLens.fontWeight": "bold",
+    "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
