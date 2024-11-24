@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bluebutton.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="js/weather.js"></script>
+    <script src="js/spinner.js"></script>
   </head>
   <body>
     <div class="scroller">
@@ -66,7 +67,14 @@
 
       <!-- Much-To-Do AI -->
       <section id="section4">
-        <iframe style="width:100vw; height:100vh; border: none;" src="https://much-to-do-ai-bkbva0bdgfhph9dw.canadacentral-01.azurewebsites.net">  </iframe>
+         <!-- Loading Icon -->
+        <div id="loading-icon" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+          <div class="spinner"></div>
+        </div>
+        <!-- Iframe (initially hidden) -->
+        <iframe id="iframe-content" style="width:100vw; height:100vh; border: none; display: none;" 
+          src="https://much-to-do-ai-bkbva0bdgfhph9dw.canadacentral-01.azurewebsites.net">
+        </iframe>
       </section>
 
       <!-- posiGrid AI -->
