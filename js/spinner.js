@@ -1,7 +1,7 @@
 // funtion for the loading spinner
-window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('loading-icon').style.display = 'none';
-      document.getElementById('iframe-content').style.display = 'block';
-    }, 5000);
-  });
+// Replace spinner with iframe content once iframe is fully loaded
+const iframe = document.getElementById('iframe-content');
+  iframe.onload = () => {
+    document.getElementById('loading-icon').style.display = 'none';
+    iframe.style.display = 'block';
+  };
