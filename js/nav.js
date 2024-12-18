@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(handleIntersect, {
     root: scroller, // Observe within the .scroller container
     rootMargin: "0px 0px -50% 0px", // Trigger when section crosses 50% of the viewport
-    threshold: 0, // Trigger as soon as a section enters the threshold
+    threshold: [0.1, 0.9], // Ensure detection as soon as a section is partially visible
   });
 
   // Observe all sections
