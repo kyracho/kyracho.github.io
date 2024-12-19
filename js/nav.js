@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create IntersectionObserver
   const observer = new IntersectionObserver(handleIntersect, {
     root: scroller, // Observe within the .scroller container
-    rootMargin: "0px 0px -50% 0px", // Trigger when section crosses 50% of the viewport
-    threshold: [0.1, 0.9], // Ensure detection as soon as a section is partially visible
+    rootMargin: "0px", // No additional margins
+    threshold: 0.5, // Trigger when section is 50% visible
   });
 
   // Observe all sections
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       const targetSection = document.getElementById(dot.dataset.section);
 
-      // Scroll to target section within .scroller
+      // Scroll to target section within .scroller (horizontal scrolling)
       scroller.scrollTo({
-        top: targetSection.offsetTop,
+        left: targetSection.offsetLeft, // Use offsetLeft for horizontal scroll
         behavior: "smooth",
       });
     });
